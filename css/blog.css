@@ -1,0 +1,198 @@
+/* Importação de fonte moderna */
+@import url('https://fonts.googleapis.com');
+
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --primary: #38bdf8;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #7c3aed;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Header Minimalista e Robusto */
+header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+/* Filtros Estilizados */
+label[for="categoria"] {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+select#categoria {
+    display: block;
+    margin: 0 auto 4rem auto;
+    background: var(--card-bg);
+    color: var(--text-main);
+    border: 1px solid #334155;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+select#categoria:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+/* Grid de Cards */
+#postcard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Design "Senior" */
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: var(--transition);
+}
+
+.card:hover img {
+    filter: brightness(1.1);
+}
+
+.card div {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.card h2 a:hover {
+    color: var(--primary);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Tags de Metadados */
+.card p strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Botão de Ação */
+.card a[href^="post.html"] {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.8rem;
+    text-align: center;
+    background: #334155;
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.card a[href^="post.html"]:hover {
+    background: var(--primary);
+    color: #000;
+}
+
+/* Estilização da Página Interna (Postpost) */
+#Postpost {
+    max-width: 800px;
+    margin: 4rem auto;
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 24px;
+    border: 1px solid #334155;
+}
+
+#Postpost h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+#Postpost img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+#Postpost ul {
+    margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+#Postpost li {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body { padding: 1rem; }
+    header { font-size: 1.8rem; }
+    #Postpost { padding: 1.5rem; }
+}
