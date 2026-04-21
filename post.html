@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/blog.css">
-
-    <title>Blog do José</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechJournal — Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/blog.css">
 </head>
-<body>
-    <main id="Postpost"></main>
-    
-    <script src="JS/post.js"></script>
+<body class="post-page">
+  <div class="noise-overlay"></div>
+  <div class="grid-bg"></div>
+
+  <!-- TOPBAR -->
+  <div class="post-topbar">
+    <a href="index.html" class="back-btn">
+      <span class="back-arrow">←</span>
+      <span>cd ..</span>
+    </a>
+    <div class="topbar-logo">[TJ]</div>
+    <div class="topbar-views" id="topbarViews"></div>
+  </div>
+
+  <!-- POST CONTENT -->
+  <main id="Postpost" class="post-wrapper"></main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" style="margin-top: 6rem;">
+    <div class="footer-inner">
+      <div class="footer-logo">[TJ]</div>
+      <div class="footer-info">
+        <span>TechJournal © 2025</span>
+        <span class="footer-sep">—</span>
+        <span>Dev &amp; Games</span>
+      </div>
+      <div class="footer-mono">Built with <span class="accent">HTML</span> · <span class="accent">CSS</span> · <span class="accent">JS</span></div>
+    </div>
+  </footer>
+
+  <script src="JS/post.js"></script>
 </body>
 </html>

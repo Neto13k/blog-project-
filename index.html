@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/blog.css">
-    <title>Tech Journal: t</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechJournal — Dev & Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
-    <header>Tech Journal:</header>
-    <section id="filtro-categoria"></section>
-    <label for="categoria">Filtro de categoria: </label>
-    <select id="categoria">
-        <option value="todas">Todas</option>
-        <option value="HTML">HTML</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="Games">Games</option>
-        <option value="Dinheiro">Dinheiro</option>
-    </select> 
-    <section>
-        <main id="postcard"></main> <!--Postsdinamicos-->
-    </section>
-    <script src="JS/Blog.js"></script>
+  <div class="noise-overlay"></div>
+  <div class="grid-bg"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">TECH<span class="logo-accent">JOURNAL</span></span>
+        <span class="logo-bracket">]</span>
+        <div class="logo-sub">// dev &amp; games digest</div>
+      </div>
+      <div class="header-meta">
+        <div class="status-dot"></div>
+        <span class="status-text">ONLINE</span>
+        <span class="header-date" id="headerDate"></span>
+      </div>
+    </div>
+    <div class="header-line">
+      <div class="header-line-fill"></div>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <span class="filter-label">// FILTER_BY:</span>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-cat="todas">ALL</button>
+        <button class="filter-tab" data-cat="HTML">HTML</button>
+        <button class="filter-tab" data-cat="JavaScript">JAVASCRIPT</button>
+        <button class="filter-tab" data-cat="Games">GAMES</button>
+        <button class="filter-tab" data-cat="Dinheiro">DINHEIRO</button>
+      </div>
+      <span class="post-count" id="postCount">4 posts</span>
+    </div>
+  </div>
+
+  <!-- FEATURED POST -->
+  <div class="featured-section">
+    <div class="featured-label">// FEATURED_POST</div>
+    <div id="featuredPost" class="featured-card"></div>
+  </div>
+
+  <!-- POSTS GRID -->
+  <section class="posts-section">
+    <div class="section-label">// LATEST_POSTS</div>
+    <main id="postcard" class="posts-grid"></main>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">[TJ]</div>
+      <div class="footer-info">
+        <span>TechJournal © 2025</span>
+        <span class="footer-sep">—</span>
+        <span>Dev &amp; Games</span>
+      </div>
+      <div class="footer-mono">Built with <span class="accent">HTML</span> · <span class="accent">CSS</span> · <span class="accent">JS</span></div>
+    </div>
+  </footer>
+
+  <script src="JS/Blog.js"></script>
 </body>
 </html>
