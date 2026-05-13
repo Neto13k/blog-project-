@@ -1,37 +1,7 @@
 // ──────────────────────────────────────────
 // TechJournal — Blog.js
+// Importa posts de JS/data.js
 // ──────────────────────────────────────────
-
-const posts = [
-  {
-    titulo: "HTML e suas funções",
-    conteudo: "HTML (HyperText Markup Language) é a espinha dorsal da web. Aprenda como estruturar documentos, usar tags semânticas e construir páginas acessíveis do zero.",
-    categoria: "HTML",
-    data: "05/07/2025",
-    imagem: "Imagens/HTML.png"
-  },
-  {
-    titulo: "JavaScript: aprendendo a linguagem",
-    conteudo: "Descubra as principais funcionalidades do JavaScript moderno — manipulação de DOM, async/await, Promises, módulos ES6 e muito mais.",
-    categoria: "JavaScript",
-    data: "06/07/2025",
-    imagem: "Imagens/js.png"
-  },
-  {
-    titulo: "Consoles mais vendidos de todos os tempos",
-    conteudo: "Do PS2 ao Nintendo Switch — uma análise dos 5 consoles que bateram todos os recordes de vendas e marcaram gerações inteiras de jogadores.",
-    categoria: "Games",
-    data: "07/07/2025",
-    imagem: "Imagens/Consoles.jpg"
-  },
-  {
-    titulo: "Dinheiro com tarefas fáceis",
-    conteudo: "Estratégias práticas para gerar renda extra com habilidades que você já possui. Plataformas, dicas e como começar ainda essa semana.",
-    categoria: "Dinheiro",
-    data: "09/07/2025",
-    imagem: "Imagens/Dolar.jpg"
-  }
-];
 
 // ── ELEMENTOS ─────────────────────────────
 const container = document.getElementById("postcard");
@@ -46,21 +16,6 @@ if (headerDateEl) {
   headerDateEl.textContent = now.toLocaleDateString("pt-BR", {
     day: "2-digit", month: "short", year: "numeric"
   }).toUpperCase();
-}
-
-// ── UTILITÁRIOS ────────────────────────────
-function getViews(index) {
-  return parseInt(localStorage.getItem(`post_${index}_visualizacoes`) || "0");
-}
-
-function getCategoryColor(cat) {
-  const map = {
-    HTML:       "#f0a500",
-    JavaScript: "#39d353",
-    Games:      "#00d4ff",
-    Dinheiro:   "#9b59b6",
-  };
-  return map[cat] || "#64748b";
 }
 
 // ── FEATURED CARD ──────────────────────────
@@ -126,7 +81,7 @@ function renderizarPosts(filtro = "todas") {
 
   const filtrados = posts
     .map((post, index) => ({ post, index }))
-    .filter(({ post }) => filtro === "todas" || post.categoria === filtro);
+    .filter(({ post, index }) => index > 0 && (filtro === "todas" || post.categoria === filtro));
 
   if (filtrados.length === 0) {
     container.innerHTML = `<div class="empty-state">Nenhum post encontrado nessa categoria.</div>`;
