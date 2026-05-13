@@ -857,8 +857,126 @@ body.post-page { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--cyan); }
 
-/* ── RESPONSIVE ───────────────────────────── */
-@media (max-width: 900px) {
+/* ── READING PROGRESS BAR ──────────────────── */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--cyan), var(--green));
+  width: 0%;
+  z-index: 200;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 16px var(--cyan);
+}
+
+/* ── SKELETON LOADING ──────────────────────– */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.card-img-wrap.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface2) 25%,
+    var(--border2) 50%,
+    var(--surface2) 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── CARD GLOW HOVER ───────────────────────── */
+.card {
+  --card-glow: rgba(0, 212, 255, 0.15);
+}
+
+.card:hover {
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 20px var(--card-glow),
+    inset 0 0 20px var(--card-glow);
+}
+
+/* ── RESPONSIVE 375px ──────────────────────– */
+@media (max-width: 375px) {
+  .header-inner { padding: 0.8rem 1rem; gap: 0.5rem; }
+  .logo-text { font-size: 1.2rem; }
+  .logo-sub { display: none; }
+  .header-meta { font-size: 0.6rem; }
+  
+  .filter-inner { 
+    padding: 0.6rem 0.8rem; 
+    gap: 0.8rem;
+  }
+  .filter-label { display: none; }
+  .filter-tabs { gap: 0.3rem; }
+  .filter-tab { 
+    padding: 0.3rem 0.6rem; 
+    font-size: 0.6rem;
+  }
+  .post-count { display: none; }
+  
+  .featured-section { margin: 2rem auto; padding: 0 0.8rem; }
+  .featured-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .featured-img-wrap { height: 160px; }
+  .featured-body { padding: 1.2rem; gap: 0.7rem; }
+  .featured-title { font-size: 1.3rem; }
+  .featured-excerpt { 
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+  }
+  .featured-meta { font-size: 0.6rem; gap: 0.8rem; }
+  
+  .posts-section { margin: 2rem auto; padding: 0 0.8rem; }
+  .posts-grid { 
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card {
+    border-radius: 8px;
+  }
+  .card-img-wrap { height: 150px; }
+  .card-body { padding: 1rem; gap: 0.5rem; }
+  .card-title { font-size: 0.95rem; }
+  .card-excerpt { font-size: 0.8rem; }
+  .card-footer { gap: 0.8rem; padding-top: 0.6rem; }
+  .card-meta { font-size: 0.55rem; }
+  .card-read-btn { font-size: 0.6rem; padding: 0.35rem 0.7rem; }
+  
+  .post-wrapper { padding: 2rem 0.8rem; }
+  .post-topbar { padding: 0.7rem 0.8rem; }
+  .post-title { font-size: clamp(1.4rem, 4vw, 2rem); }
+  
+  .footer-inner { 
+    padding: 1.2rem 0.8rem; 
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-mono { font-size: 0.6rem; }
+}
+
+/* ── RESPONSIVE 600px ──────────────────────– */
+@media (max-width: 600px) {
+  .header-inner { padding: 1rem; }
+  .header-date { display: none; }
+  .filter-inner { padding: 0.8rem 1rem; }
+  .featured-section, .posts-section { padding: 0 1rem; }
+  .featured-body { padding: 1.5rem; }
+  .post-wrapper { padding: 2rem 1rem 3rem; }
+  .post-topbar { padding: 0.8rem 1rem; }
+  .footer-inner { padding: 1.5rem 1rem; flex-direction: column; align-items: flex-start; }
+  .posts-grid { grid-template-columns: 1fr; }
+  
   .featured-card {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -871,14 +989,15 @@ body.post-page { background: var(--bg); }
   }
 }
 
-@media (max-width: 600px) {
-  .header-inner { padding: 1rem; }
-  .header-date { display: none; }
-  .filter-inner { padding: 0.8rem 1rem; }
-  .featured-section, .posts-section { padding: 0 1rem; }
-  .featured-body { padding: 1.5rem; }
-  .post-wrapper { padding: 2rem 1rem 3rem; }
-  .post-topbar { padding: 0.8rem 1rem; }
-  .footer-inner { padding: 1.5rem 1rem; flex-direction: column; align-items: flex-start; }
-  .posts-grid { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .featured-img-wrap {
+    height: 220px;
+  }
+  .featured-img-overlay {
+    background: linear-gradient(to top, var(--surface) 10%, transparent 60%);
+  }
 }
