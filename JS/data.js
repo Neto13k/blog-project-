@@ -148,7 +148,7 @@ const posts = [
     conteudo: "A startup chinesa DeepSeek lançou modelos de IA que rivalizam com GPT-4 a uma fração do custo, remodelando o mercado global de inteligência artificial e acendendo debates sobre soberania tecnológica.",
     categoria: "Tecnologia",
     data: "10/05/2025",
-    imagem: "https://picsum.photos/seed/deepseek/800/450",
+    imagem: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&h=450&fit=crop&auto=format",
     conteudoCompleto: `
       <p>Em janeiro de 2025, a startup chinesa <strong>DeepSeek</strong> chocou o mundo da tecnologia ao lançar seu modelo de IA <strong>R1</strong>, capaz de rivalizar com o GPT-4 da OpenAI em várias tarefas, mas com um diferencial revolucionário: o custo de inferência é apenas uma fração do que os modelos americanos cobram.</p>
 
@@ -177,7 +177,7 @@ const posts = [
     conteudo: "A Nintendo confirmou o Switch 2 com lançamento global em junho de 2025. Novo Joy-Con magnético, tela maior, suporte a 4K em dock e Mario Kart World como título de lançamento.",
     categoria: "Games",
     data: "11/05/2025",
-    imagem: "https://picsum.photos/seed/switch2/800/450",
+    imagem: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&h=450&fit=crop&auto=format",
     conteudoCompleto: `
       <p>Após anos de especulação, a Nintendo oficialmente anunciou o <strong>Switch 2</strong> com lançamento global previsto para <strong>junho de 2025</strong>. O console promete manter a fórmula híbrida que conquistou 140+ milhões de usuários, mas com melhorias significativas em desempenho, design e recursos.</p>
 
@@ -212,7 +212,7 @@ const posts = [
     conteudo: "O TypeScript 5.5 chegou com inferência de tipo para closures, melhorias no isolatedDeclarations e suporte nativo a expressões regulares tipadas — tornando o código mais seguro e a experiência de dev ainda melhor.",
     categoria: "JavaScript",
     data: "12/05/2025",
-    imagem: "https://picsum.photos/seed/typescript/800/450",
+    imagem: "https://images.unsplash.com/photo-1743090660977-babf07732432?w=800&h=450&fit=crop&auto=format",
     conteudoCompleto: `
       <p>O <strong>TypeScript 5.5</strong> foi lançado em maio de 2025 com melhorias significativas em inferência de tipos, performance e ergonomia de desenvolvedor. Se você trabalha com React, Next.js ou Node.js, as novidades vão simplificar seu fluxo de trabalho.</p>
 
@@ -274,7 +274,7 @@ pnpm add -D typescript@latest</code></pre>
     conteudo: "O Bitcoin ultrapassou a barreira dos US$100.000 no fim de 2024 e segue volátil em 2025. Entenda os fatores por trás da alta histórica, o papel dos ETFs spot, o halving e o que analistas projetam para o restante do ano.",
     categoria: "Dinheiro",
     data: "13/05/2025",
-    imagem: "https://picsum.photos/seed/bitcoin/800/450",
+    imagem: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=450&fit=crop&auto=format",
     conteudoCompleto: `
       <p>Em dezembro de 2024, o Bitcoin alcançou um marco histórico: <strong>ultrapassou US$100 mil</strong> pela primeira vez. Continuamos em 2025 e o ativo permanece volátil, oscilando entre US$90 e US$110 mil. <strong>Como chegamos aqui? E para onde vai?</strong></p>
 
@@ -315,7 +315,7 @@ pnpm add -D typescript@latest</code></pre>
     conteudo: "Web Components — Custom Elements, Shadow DOM e HTML Templates — finalmente têm suporte total em todos os browsers modernos. Descubra como criar componentes reutilizáveis sem nenhum framework.",
     categoria: "HTML",
     data: "14/05/2025",
-    imagem: "https://picsum.photos/seed/webcomponents/800/450",
+    imagem: "https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=800&h=450&fit=crop&auto=format",
     conteudoCompleto: `
       <p>Por anos, Web Components foi a promessa não cumprida: criar componentes nativos em HTML sem depender de React, Vue ou Angular. Mas em 2025, <strong>finalmente chegamos ao ponto em que Web Components funciona, é confiável, e tem suporte total em todos os browsers modernos</strong>.</p>
 
