@@ -891,7 +891,7 @@ customElements.define('my-card', MyCard);</code></pre>
       <p><strong>Conclusão:</strong> Python não está "na moda" — está na base. Enquanto a IA dominar o mercado de tecnologia, Python será a linguagem mais estratégica que você pode aprender.</p>
     `
   },
-  // ── POST 5: TYPESCRIPT 5.5 ─────────────────────
+  // ── POST 17: TYPESCRIPT 5.5 ─────────────────────
   {
     titulo: "TypeScript 5.5 e as Novidades que Todo Dev Precisa Conhecer",
     conteudo: "O TypeScript 5.5 chegou com inferência de tipo para closures, melhorias no isolatedDeclarations e suporte nativo a expressões regulares tipadas — tornando o código mais seguro e a experiência de dev ainda melhor.",
