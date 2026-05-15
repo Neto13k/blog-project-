@@ -569,7 +569,7 @@ pm2 monit</code></pre>
       <p><strong>Conclusão:</strong> DeepSeek não é apenas um modelo; é um desafio ao status quo. 2025 promete ser o ano em que IA deixa de ser privilégio de gigantes americanas e se torna verdadeiramente global.</p>
     `
   },
-  // ── POST 16: RTX 5000 ───────────────────────────────
+  // ── POST 11: RTX 5000 ───────────────────────────────
   {
     titulo: "NVIDIA GeForce RTX 5000: A Nova Geração de GPUs Chegou",
     conteudo: "A NVIDIA apresentou a série RTX 5000 com arquitetura Blackwell, DLSS 4 e desempenho até 2x maior que a geração anterior. Veja o que mudou e qual placa vale o investimento em 2026.",
