@@ -758,7 +758,7 @@ pm2 monit</code></pre>
       <p><strong>Dica final:</strong> Comece com um nicho, construa 3 cases reais (mesmo que gratuitos no início) e documente os resultados com números. Um case bem contado vale mais que 10 anos de experiência no currículo.</p>
     `
   },
-  // ── POST 7: WEB COMPONENTS ─────────────────────
+  // ── POST 15: WEB COMPONENTS ─────────────────────
   {
     titulo: "Web Components em 2025: HTML Nativo Finalmente Maduro",
     conteudo: "Web Components — Custom Elements, Shadow DOM e HTML Templates — finalmente têm suporte total em todos os browsers modernos. Descubra como criar componentes reutilizáveis sem nenhum framework.",
