@@ -615,7 +615,7 @@ pm2 monit</code></pre>
       <p><strong>Conclusão:</strong> A série RTX 5000 é a geração mais ambiciosa da NVIDIA. Para quem pode pagar, entrega experiências impossíveis na geração anterior. Para quem não pode, as RTX 4000 continuam excelentes — e ficaram mais baratas com o lançamento da nova linha.</p>
     `
   },
-  // ── POST 13: XBOX GAME PASS ───────────────
+  // ── POST 12: XBOX GAME PASS ───────────────
   {
     titulo: "Xbox Game Pass em 2026: Vale a Pena Assinar?",
     conteudo: "Com Forza Horizon 6, Gears of War E-Day, Halo: Campaign Evolved e Fable chegando ao Game Pass em 2026, a assinatura da Microsoft nunca foi tão recheada. Analisamos se vale o investimento para jogadores brasileiros.",
