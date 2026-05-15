@@ -3,7 +3,7 @@
 // ──────────────────────────────────────────
 
 const posts = [
-  // ── POST 0 (FEATURED) ──────────────────
+  // ── POST 0: HTML e suas funções ──────────────────
   {
     titulo: "HTML e suas funções",
     conteudo: "HTML (HyperText Markup Language) é a espinha dorsal da web. Aprenda como estruturar documentos, usar tags semânticas e construir páginas acessíveis do zero.",
@@ -142,7 +142,7 @@ const posts = [
       <p><strong>Dica de ouro:</strong> Foque em uma ou duas opções que se encaixem na sua rotina. Consistência é mais importante que quantidade. Comece pequeno, valide, e escale.</p>
     `
   },
-  // ── POST 9: GTA 6 ────────────────────────
+  // ── POST 4: GTA 6 ────────────────────────
   {
     titulo: "GTA 6: Tudo que Sabemos Sobre o Jogo Mais Aguardado da Década",
     conteudo: "GTA 6 chega em 19 de novembro de 2026 para PS5 e Xbox Series X|S. Dois protagonistas, Vice City renovada, gráficos com ray tracing global e a história de Lucia e Jason. Confira o guia completo.",
@@ -185,7 +185,7 @@ const posts = [
       <p><strong>Previsão:</strong> Com campanha de marketing prevista para começar no verão de 2026, espere novos trailers e revelações de gameplay em breve.</p>
     `
   },
-  // ── POST 17 ───────────────────────────────
+  // ── POST 5: NVIDIA e a Corrida da IA+ ───────────────────────────────
   {
     titulo: "NVIDIA e a Corrida da IA: Como a Empresa Virou o Centro do Mundo Tech",
     conteudo: "A NVIDIA deixou de ser apenas uma fabricante de GPUs para se tornar a empresa mais valiosa do mundo em 2024–2026. Entenda como os chips H100 e Blackwell alimentam a revolução da IA e o que isso significa para o futuro.",
