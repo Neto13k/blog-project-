@@ -705,7 +705,7 @@ pm2 monit</code></pre>
       <p><strong>Dica final:</strong> Não tente prever o preço exato. Bitcoin é especulativo e volátil. Invista apenas o que pode perder e mantenha visão de longo prazo (5+ anos).</p>
     `
   },
-  // ── POST 19 ───────────────────────────────
+  // ── POST 14 Freelancer de Tech em 2026 ───────────────────────────────
   {
     titulo: "Freelancer de Tech em 2026: Como Cobrar e Onde Encontrar Clientes",
     conteudo: "O mercado de freelancers de tecnologia nunca esteve tão aquecido. Veja como precificar seus serviços de desenvolvimento e IA, quais plataformas usar e como sair da concorrência por preço.",
