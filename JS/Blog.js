@@ -19,10 +19,18 @@ if (headerDateEl) {
 }
 
 // ── FEATURED CARD ──────────────────────────
-function renderFeatured() {
+// ── FEATURED CARD ──────────────────────────
+let featuredIndex = 0;
+let featuredInterval = null;
+
+function renderFeatured(index) {
   if (!featuredEl) return;
-  const post = posts[0]; // Primeiro post = destaque
-  const views = getViews(0);
+  const post = posts[index];
+  const views = getViews(index);
+
+  featuredEl.classList.remove("featured-anim");
+  void featuredEl.offsetWidth; // força reflow para reiniciar animação
+  featuredEl.classList.add("featured-anim");
 
   featuredEl.innerHTML = `
     <div class="featured-img-wrap">
@@ -39,9 +47,49 @@ function renderFeatured() {
         <span>📅 ${post.data}</span>
         <span class="meta-views">👁 ${views} views</span>
       </div>
-      <a href="post.html?id=0" class="featured-read-btn">LER POST</a>
+      <a href="post.html?id=${index}" class="featured-read-btn">LER POST</a>
+    </div>
+    <div class="featured-controls">
+      <button class="featured-prev" id="featuredPrev">&#8592;</button>
+      <div class="featured-dots">
+        ${posts.map((_, i) => `<span class="featured-dot ${i === index ? 'active' : ''}" data-i="${i}"></span>`).join("")}
+      </div>
+      <button class="featured-next" id="featuredNext">&#8594;</button>
     </div>
   `;
+
+  // Botão anterior
+  document.getElementById("featuredPrev").addEventListener("click", () => {
+    clearInterval(featuredInterval);
+    featuredIndex = (featuredIndex - 1 + posts.length) % posts.length;
+    renderFeatured(featuredIndex);
+    startFeaturedInterval();
+  });
+
+  // Botão próximo
+  document.getElementById("featuredNext").addEventListener("click", () => {
+    clearInterval(featuredInterval);
+    featuredIndex = (featuredIndex + 1) % posts.length;
+    renderFeatured(featuredIndex);
+    startFeaturedInterval();
+  });
+
+  // Dots clicáveis
+  document.querySelectorAll(".featured-dot").forEach(dot => {
+    dot.addEventListener("click", () => {
+      clearInterval(featuredInterval);
+      featuredIndex = parseInt(dot.dataset.i);
+      renderFeatured(featuredIndex);
+      startFeaturedInterval();
+    });
+  });
+}
+
+function startFeaturedInterval() {
+  featuredInterval = setInterval(() => {
+    featuredIndex = (featuredIndex + 1) % posts.length;
+    renderFeatured(featuredIndex);
+  }, 5000); // troca a cada 5 segundos
 }
 
 // ── CARD INDIVIDUAL ────────────────────────
@@ -110,5 +158,6 @@ filterTabs.forEach(tab => {
 });
 
 // ── INIT ───────────────────────────────────
-renderFeatured();
+renderFeatured(featuredIndex);
+startFeaturedInterval();
 renderizarPosts();
