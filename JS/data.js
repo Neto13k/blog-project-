@@ -177,7 +177,7 @@ const posts = [
     conteudo: "O TypeScript 5.5 chegou com inferência de tipo para closures, melhorias no isolatedDeclarations e suporte nativo a expressões regulares tipadas — tornando o código mais seguro e a experiência de dev ainda melhor.",
     categoria: "JavaScript",
     data: "12/05/2025",
-    imagem: "https://images.unsplash.com/photo-1743090660977-babf07732432?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/TypeScript.jpg",
     conteudoCompleto: `
       <p>O <strong>TypeScript 5.5</strong> foi lançado em maio de 2025 com melhorias significativas em inferência de tipos, performance e ergonomia de desenvolvedor. Se você trabalha com React, Next.js ou Node.js, as novidades vão simplificar seu fluxo de trabalho.</p>
 
