@@ -345,7 +345,7 @@ function Comments({ commentsPromise }) {
       <p><strong>Veredicto:</strong> Se você tem Xbox Game Pass, não há desculpa para não jogar. Forza Horizon 6 é um showcase glorioso do que os jogos de corrida podem ser.</p>
     `
   },
-  // ── POST 12: TECNOLOGIA IA 2026 ───────────
+  // ── POST 8: TECNOLOGIA IA 2026 ───────────
   {
     titulo: "IA em 2026: GPT-5, Gemini Ultra 2 e a Guerra dos Modelos",
     conteudo: "O mercado de inteligência artificial entrou em hipervelocidade. OpenAI, Google e Anthropic lançam modelos cada vez mais poderosos em 2026. Veja como essa corrida impacta desenvolvedores e empresas brasileiras.",
