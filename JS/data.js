@@ -540,7 +540,7 @@ pm2 monit</code></pre>
       <p><strong>Conclusão:</strong> Node.js em produção exige disciplina. Seguindo essas práticas você escreve código mais seguro, escalável e fácil de manter — independente do tamanho do projeto.</p>
     `
   },
-  // ── POST 4: DEEPSEEK ─────────────────────
+  // ── POST 10: DEEPSEEK ─────────────────────
   {
     titulo: "DeepSeek e o Novo Cenário da IA em 2025",
     conteudo: "A startup chinesa DeepSeek lançou modelos de IA que rivalizam com GPT-4 a uma fração do custo, remodelando o mercado global de inteligência artificial e acendendo debates sobre soberania tecnológica.",
