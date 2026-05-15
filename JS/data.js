@@ -354,7 +354,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "O mais aguardado jogo de corrida do ano chegou! Forza Horizon 6 leva os jogadores ao Japão com 550+ carros, o maior mapa da franquia, Touge Battles e nota 91 no Metacritic. Disponível no Game Pass desde 19 de maio.",
     categoria: "Games",
     data: "19/05/2026",
-    imagem: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/Forza6.jpg",
     conteudoCompleto: `
       <p><strong>Forza Horizon 6</strong> finalmente chegou e superou as expectativas. Lançado em 19 de maio de 2026 para Xbox Series X|S, PC e disponível desde o primeiro dia no <strong>Xbox Game Pass</strong>, o jogo recebeu nota <strong>91 no Metacritic</strong>, consagrando-se como o melhor título da franquia até hoje.</p>
 
@@ -398,49 +398,6 @@ customElements.define('my-card', MyCard);</code></pre>
       <p><strong>PS5:</strong> confirmada para o final de 2026, sem data oficial definida. Preço no Brasil: R$ 299 na versão padrão.</p>
 
       <p><strong>Veredicto:</strong> Se você tem Xbox Game Pass, não há desculpa para não jogar. Forza Horizon 6 é um showcase glorioso do que os jogos de corrida podem ser.</p>
-    `
-  },
-  // ── POST 10: FORZA HORIZON 6 DICAS ────────
-  {
-    titulo: "Forza Horizon 6: 10 Dicas Para Dominar o Japão",
-    conteudo: "Começou no Forza Horizon 6 e não sabe por onde ir? Reunimos as melhores dicas para aproveitar ao máximo a corrida em mundo aberto no Japão — de carros iniciais às Touge Battles e Legend Island.",
-    categoria: "Games",
-    data: "20/05/2026",
-    imagem: "https://images.unsplash.com/photo-1622127088817-a0a53ec2e577?w=800&h=450&fit=crop&auto=format",
-    conteudoCompleto: `
-      <p>Forza Horizon 6 é enorme. Com o mapa mais denso da franquia e dezenas de modos de jogo, pode ser difícil saber por onde começar. Separamos as <strong>10 dicas essenciais</strong> para você sair na frente no Festival do Japão.</p>
-
-      <h3>1. Explore o Mapa Antes de Correr</h3>
-      <p>O Japão de FH6 é incrivelmente denso. Antes de focar em corridas, explore as áreas livremente para desbloquear pontos de influência, descobrir atalhos e preencher o <strong>Diário de Coleção</strong>. Cada ponto descoberto traz recompensas únicas.</p>
-
-      <h3>2. Invista em Carros JDM</h3>
-      <p>Os carros japoneses são os verdadeiros protagonistas de FH6. O <strong>Nissan Skyline GT-R (BNR32)</strong>, <strong>Toyota Supra A80</strong> e <strong>Mazda RX-7 FD</strong> têm vantagens especiais nas Touge Battles e eventos culturais do jogo.</p>
-
-      <h3>3. Domine as Touge Battles</h3>
-      <p>As batalhas nas montanhas são os eventos mais intensos e recompensadores do jogo. Chave para vencer: <strong>freie antes da curva, acelere na saída</strong>. Carros com tração traseira têm vantagem nas estradas sinuosas.</p>
-
-      <h3>4. Use o Modo Qualidade para Screenshots</h3>
-      <p>FH6 é visualmente deslumbrante no Modo Qualidade. O Photo Mode melhorado permite capturar ângulos incríveis com Tóquio iluminada ao fundo. Use filtros cinematográficos para imagens de cinema.</p>
-
-      <h3>5. Aproveite o Aftermarket Cars</h3>
-      <p>Carros raros de eventos anteriores estão disponíveis nos pontos de venda espalhados pelo mapa. O estoque é dinâmico e muda regularmente — visite-os com frequência para não perder veículos exclusivos.</p>
-
-      <h3>6. Mire na Legend Island</h3>
-      <p>A meta de longo prazo é chegar à <strong>Legend Island</strong>, área exclusiva desbloqueada pelos jogadores no ranking mais alto. Ela oferece um hub especial, eventos únicos e o Goliath de 80 km — a maior corrida da história do Horizon.</p>
-
-      <h3>7. Jogue o Modo CoLab com Amigos</h3>
-      <p>O novo CoLab (evolução do EventLab) permite criar corridas personalizadas em qualquer lugar do Japão com suporte multiplayer. Crie desafios impossíveis ou recrie corridas de filmes e anime.</p>
-
-      <h3>8. Não Perca o Stunt Party</h3>
-      <p>O antigo Forzathon Live virou <strong>Stunt Party</strong> — eventos cooperativos com mecânicas novas e recompensas exclusivas. Participe regularmente para acumular pontos de Festival e desbloquear carros raros.</p>
-
-      <h3>9. Ajuste a Dificuldade dos Drivatars</h3>
-      <p>FH6 tem um sistema de dificuldade granular. Aumentar a dificuldade dos oponentes multiplica o bônus de créditos, acelerando o progresso. Comece em Médio e suba conforme ganha confiança nas pistas.</p>
-
-      <h3>10. Explore de Noite e nas Quatro Estações</h3>
-      <p>FH6 traz as <strong>quatro estações</strong> de volta, com neve nos Alpes japoneses no inverno. O jogo é completamente diferente à noite, com Tóquio iluminada e eventos noturnos especiais. A trilha sonora muda de acordo com a estação e hora do dia.</p>
-
-      <p><strong>Bônus:</strong> Se você comprou antes do lançamento, confira seu garagem — o exclusivo Ferrari J50 pré-tunado deve estar esperando por você!</p>
     `
   },
   // ── POST 11: GTA 6 ────────────────────────
