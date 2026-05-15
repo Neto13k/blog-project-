@@ -106,7 +106,7 @@ const posts = [
       <p><strong>Menções honrosas:</strong> Nintendo Wii (101M), Xbox 360 e PlayStation 3 (~80M cada), e o PS5 com mais de 60M e ainda em alta.</p>
     `
   },
-  // ── POST 3 ────────────────────────────
+  // ── POST 3: Dinheiro com tarefas fáceis ────────────────────────────
   {
     titulo: "Dinheiro com tarefas fáceis",
     conteudo: "Estratégias práticas para gerar renda extra com habilidades que você já possui. Plataformas, dicas e como começar ainda essa semana.",
