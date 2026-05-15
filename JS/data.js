@@ -488,7 +488,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "Com Forza Horizon 6, Gears of War E-Day, Halo: Campaign Evolved e Fable chegando ao Game Pass em 2026, a assinatura da Microsoft nunca foi tão recheada. Analisamos se vale o investimento para jogadores brasileiros.",
     categoria: "Games",
     data: "13/05/2026",
-    imagem: "https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/GamePass.jpg",
     conteudoCompleto: `
       <p>2026 está sendo o ano mais forte da história do <strong>Xbox Game Pass</strong>. Com uma fila impressionante de exclusivos chegando ao catálogo já no dia de lançamento, a Microsoft finalmente entrega a promessa que fez há anos: transformar o Game Pass na "Netflix dos jogos".</p>
 
@@ -537,7 +537,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "React 19 trouxe Server Components estáveis, Actions, o novo hook use() e melhorias massivas de performance. Saiba o que mudou e como migrar seus projetos em 2026.",
     categoria: "JavaScript",
     data: "12/05/2026",
-    imagem: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/React 19.jpg",
     conteudoCompleto: `
       <p>O <strong>React 19</strong>, lançado no final de 2024 e amplamente adotado em 2025–2026, representa a maior mudança na forma de escrever aplicações React desde os hooks em 2019. As novidades não são apenas sintáticas — elas mudam fundamentalmente como você pensa sobre renderização, estado e dados.</p>
 
@@ -598,7 +598,7 @@ function Comments({ commentsPromise }) {
     conteudo: "Python domina rankings de linguagens pelo quinto ano consecutivo. Da IA ao desenvolvimento web, passando por automação e ciência de dados, veja por que aprender Python em 2026 ainda é a melhor decisão.",
     categoria: "Tecnologia",
     data: "10/05/2026",
-    imagem: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/Python.jpg",
     conteudoCompleto: `
       <p><strong>Python</strong> ocupa o topo do índice TIOBE pelo quinto ano consecutivo e continua sendo a linguagem mais ensinada em universidades, bootcamps e cursos online. Em 2026, com a explosão da IA, o Python se tornou ainda mais indispensável. Mas por quê, e o que aprender nele?</p>
 
