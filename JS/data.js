@@ -384,7 +384,7 @@ function Comments({ commentsPromise }) {
       <p><strong>Conclusão:</strong> Quem investir agora em habilidades de IA tem uma janela de vantagem competitiva de 2 a 3 anos. O momento é agora.</p>
     `
   },
-  // ── POST 18 ───────────────────────────────
+  // ── POST 9: Node.js em 2026: 10 Dicas para Escrever Código Profissional ───────────────────────────────
   {
     titulo: "Node.js em 2026: 10 Dicas para Escrever Código Profissional",
     conteudo: "Node.js continua sendo a espinha dorsal do backend JavaScript moderno. Confira 10 dicas práticas — de gerenciamento de erros a performance e segurança — para elevar seu nível como desenvolvedor Node.",
