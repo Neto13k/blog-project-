@@ -142,265 +142,7 @@ const posts = [
       <p><strong>Dica de ouro:</strong> Foque em uma ou duas opções que se encaixem na sua rotina. Consistência é mais importante que quantidade. Comece pequeno, valide, e escale.</p>
     `
   },
-  // ── POST 4 (NOVO) ─────────────────────
-  {
-    titulo: "DeepSeek e o Novo Cenário da IA em 2025",
-    conteudo: "A startup chinesa DeepSeek lançou modelos de IA que rivalizam com GPT-4 a uma fração do custo, remodelando o mercado global de inteligência artificial e acendendo debates sobre soberania tecnológica.",
-    categoria: "Tecnologia",
-    data: "10/05/2025",
-    imagem: "./Imagens/DeepSeek.avif",
-    conteudoCompleto: `
-      <p>Em janeiro de 2025, a startup chinesa <strong>DeepSeek</strong> chocou o mundo da tecnologia ao lançar seu modelo de IA <strong>R1</strong>, capaz de rivalizar com o GPT-4 da OpenAI em várias tarefas, mas com um diferencial revolucionário: o custo de inferência é apenas uma fração do que os modelos americanos cobram.</p>
-
-      <p>O impacto foi imediato no mercado de ações. Empresas de IA americana como NVIDIA, OpenAI e Anthropic viram suas avaliações caírem enquanto a comunidade de tecnologia debatia as implicações geopolíticas. <strong>Como uma startup chinesa conseguiu alcançar esse nível?</strong> A resposta envolve eficiência extrema de código, otimizações de hardware e uma abordagem diferente ao treinamento de modelos.</p>
-
-      <h3>O Que Torna o DeepSeek R1 Especial?</h3>
-      <ul>
-        <li><strong>Custo 90% menor</strong> — Inferência por token significativamente mais barata que GPT-4</li>
-        <li><strong>Open-source</strong> — Código e pesos disponíveis para download e deploy local</li>
-        <li><strong>Raciocínio longado</strong> — Similar ao o1 da OpenAI, capaz de resolver problemas complexos passo-a-passo</li>
-        <li><strong>Suporte multilíngue</strong> — Desempenho robusto em português, chinês e outras línguas</li>
-      </ul>
-
-      <h3>O Debate: Open-Source vs. Closed-Source</h3>
-      <p>A liberação do DeepSeek em open-source reavivou discussões sobre segurança, controle e acesso democratizado. Desenvolvedores brasileiros agora podem executar modelos de IA de ponta localmente, sem depender de APIs pagas. Mas qual é o trade-off entre liberdade e segurança?</p>
-
-      <h3>O Que Isso Significa Para Desenvolvedores Brasileiros</h3>
-      <p>A chegada do DeepSeek abre portas: projetos de IA são agora mais acessíveis financeiramente, plataformas locais podem rodar modelos avançados, e o ecossistema de startups brasileiras ganha uma ferramenta poderosa. Ao mesmo tempo, reforça a urgência de investimento em pesquisa e tecnologia nacional.</p>
-
-      <p><strong>Conclusão:</strong> DeepSeek não é apenas um modelo; é um desafio ao status quo. 2025 promete ser o ano em que IA deixa de ser privilégio de gigantes americanas e se torna verdadeiramente global.</p>
-    `
-  },
-  // ── POST 6 (NOVO) ─────────────────────
-  {
-    titulo: "TypeScript 5.5 e as Novidades que Todo Dev Precisa Conhecer",
-    conteudo: "O TypeScript 5.5 chegou com inferência de tipo para closures, melhorias no isolatedDeclarations e suporte nativo a expressões regulares tipadas — tornando o código mais seguro e a experiência de dev ainda melhor.",
-    categoria: "JavaScript",
-    data: "12/05/2025",
-    imagem: "./Imagens/TypeScript.jpg",
-    conteudoCompleto: `
-      <p>O <strong>TypeScript 5.5</strong> foi lançado em maio de 2025 com melhorias significativas em inferência de tipos, performance e ergonomia de desenvolvedor. Se você trabalha com React, Next.js ou Node.js, as novidades vão simplificar seu fluxo de trabalho.</p>
-
-      <h3>Principais Novidades do TS 5.5</h3>
-      
-      <h3>1. Inferência de Tipo para Closures</h3>
-      <p>Antes:</p>
-      <ul>
-        <li>Closures exigiam anotações manuais para tipos de parâmetro</li>
-        <li>Erros de tipo só apareciam em tempo de compilação</li>
-      </ul>
-      <p>Agora:</p>
-      <pre><code>// TypeScript 5.5 infere automaticamente
-const createAdder = (x: number) => {
-  return (y) => x + y; // y é inferido como number
-};</code></pre>
-
-      <h3>2. Inferred Type Predicates</h3>
-      <p>Type predicates agora são inferidos automaticamente, reduzindo boilerplate:</p>
-      <pre><code>// Sem anotação explícita de retorno 'is'
-function isString(value: unknown) {
-  return typeof value === 'string';
-}
-// TypeScript entende que é um type predicate automaticamente</code></pre>
-
-      <h3>3. Isolated Declarations</h3>
-      <p>A flag <code>isolatedDeclarations: true</code> garante que cada arquivo possa ser analisado independentemente, acelerando compilação em projetos grandes.</p>
-
-      <h3>4. Regex Tipado Nativo</h3>
-      <pre><code>// Novo suporte a regex.test() com type guard
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const email = "user@example.com";
-
-if (emailRegex.test(email)) {
-  // email é inferido como validado aqui
-}</code></pre>
-
-      <h3>Por Que Isso Importa Para Seus Projetos</h3>
-      <ul>
-        <li><strong>React/Next.js:</strong> Melhor type safety em hooks customizados e context</li>
-        <li><strong>Node.js:</strong> Streams, eventos e callbacks com tipos mais precisos</li>
-        <li><strong>Performance:</strong> Compilação mais rápida em monorepos</li>
-        <li><strong>Ergonomia:</strong> Menos anotações manuais = código mais limpo</li>
-      </ul>
-
-      <h3>Como Atualizar</h3>
-      <pre><code>npm install -D typescript@latest
-// Ou com pnpm
-pnpm add -D typescript@latest</code></pre>
-
-      <p><strong>Aviso de compatibilidade:</strong> TypeScript 5.5 requer Node.js 16.3+ (ou 18+ recomendado).</p>
-
-      <p><strong>Resumo:</strong> TypeScript continua evoluindo para tornar o desenvolvimento seguro, rápido e agradável. Atualize assim que possível.</p>
-    `
-  },
-  // ── POST 7 (NOVO) ─────────────────────
-  {
-    titulo: "Bitcoin a US$100 Mil: Entenda o que Aconteceu e o que Vem a Seguir",
-    conteudo: "O Bitcoin ultrapassou a barreira dos US$100.000 no fim de 2024 e segue volátil em 2025. Entenda os fatores por trás da alta histórica, o papel dos ETFs spot, o halving e o que analistas projetam para o restante do ano.",
-    categoria: "Dinheiro",
-    data: "13/05/2025",
-    imagem: "./Imagens/Bitcoin.avif",
-    conteudoCompleto: `
-      <p>Em dezembro de 2024, o Bitcoin alcançou um marco histórico: <strong>ultrapassou US$100 mil</strong> pela primeira vez. Continuamos em 2025 e o ativo permanece volátil, oscilando entre US$90 e US$110 mil. <strong>Como chegamos aqui? E para onde vai?</strong></p>
-
-      <h3>Cronologia da Alta de 2024–2025</h3>
-      <ul>
-        <li><strong>Janeiro 2024:</strong> Bitcoin em US$50 mil</li>
-        <li><strong>Julho 2024:</strong> Halving reduz recompensa por bloco de 6.5 para 3.125 BTC</li>
-        <li><strong>Setembro 2024:</strong> Aprovação esperada dos ETFs spot nos EUA</li>
-        <li><strong>Dezembro 2024:</strong> Bitcoin atinge US$108 mil com aprovação dos ETFs confirmada</li>
-        <li><strong>Maio 2025:</strong> Volatilidade continua em torno de US$100 mil</li>
-      </ul>
-
-      <h3>O Papel Crítico dos ETFs Spot</h3>
-      <p>Os <strong>Bitcoin Spot ETFs</strong> aprovados pela SEC em janeiro de 2024 revolucionaram o acesso: investidores institucionais e pessoas comuns podem agora comprar BTC via corretoras tradicionais, sem tocar em exchanges cripto. <strong>Impacto:</strong> entrada de bilhões em capital institucional.</p>
-
-      <h3>O Halving de Abril de 2024</h3>
-      <p>Ocorre a cada 4 anos, reduzindo as recompensas de mineração pela metade. Isso diminui a inflação do Bitcoin e historicamente precede altas de preço. O padrão: halving → escassez → demanda → alta de preço.</p>
-
-      <h3>Projeções Para 2025</h3>
-      <p><strong>Cenário otimista:</strong> US$150–200 mil (pressão institucional, aprovação de mais ETFs internacionais).</p>
-      <p><strong>Cenário realista:</strong> US$80–120 mil (consolidação, ciclos de ganhos e perdas).</p>
-      <p><strong>Cenário pessimista:</strong> US$40–60 mil (recessão econômica, regulação restritiva).</p>
-
-      <h3>Como Brasileiros Podem Acessar Cripto com Segurança</h3>
-      <ul>
-        <li><strong>Exchanges reguladas:</strong> Coinbase, Kraken (com suporte a BRL), Mercado Bitcoin</li>
-        <li><strong>Impostos:</strong> Ganhos em cripto são tributáveis. Mantenha registros de compra/venda</li>
-        <li><strong>Segurança:</strong> Use hardware wallets (Ledger, Trezor) para valores acima de US$1k</li>
-        <li><strong>Diversificação:</strong> Cripto deve representar &lt;5–10% da carteira total</li>
-      </ul>
-
-      <p><strong>Dica final:</strong> Não tente prever o preço exato. Bitcoin é especulativo e volátil. Invista apenas o que pode perder e mantenha visão de longo prazo (5+ anos).</p>
-    `
-  },
-  // ── POST 8 (NOVO) ─────────────────────
-  {
-    titulo: "Web Components em 2025: HTML Nativo Finalmente Maduro",
-    conteudo: "Web Components — Custom Elements, Shadow DOM e HTML Templates — finalmente têm suporte total em todos os browsers modernos. Descubra como criar componentes reutilizáveis sem nenhum framework.",
-    categoria: "HTML",
-    data: "14/05/2025",
-    imagem: "./Imagens/WebComponents.avif",
-    conteudoCompleto: `
-      <p>Por anos, Web Components foi a promessa não cumprida: criar componentes nativos em HTML sem depender de React, Vue ou Angular. Mas em 2025, <strong>finalmente chegamos ao ponto em que Web Components funciona, é confiável, e tem suporte total em todos os browsers modernos</strong>.</p>
-
-      <h3>O Que São Web Components?</h3>
-      <p>Web Components é um conjunto de APIs nativas do navegador que permitem criar elementos HTML customizados e reutilizáveis:</p>
-      <ul>
-        <li><strong>Custom Elements</strong> — Defina seus próprios tags HTML</li>
-        <li><strong>Shadow DOM</strong> — Encapsule estilos e marcação isolados</li>
-        <li><strong>HTML Templates</strong> — Templates que não renderizam até serem clonados</li>
-        <li><strong>Slots</strong> — Adicione pontos de inserção dinâmicos</li>
-      </ul>
-
-      <h3>Exemplo Prático: Componente &lt;my-card&gt;</h3>
-      <pre><code>class MyCard extends HTMLElement {
-  connectedCallback() {
-    const title = this.getAttribute('title');
-    this.innerHTML = \`
-      <div class="card">
-        <h2>\${title}</h2>
-        <slot></slot>
-      </div>
-    \`;
-  }
-}
-customElements.define('my-card', MyCard);</code></pre>
-
-      <p>Uso no HTML:</p>
-      <pre><code>&lt;my-card title="Hello"&gt;
-  Conteúdo aqui!
-&lt;/my-card&gt;</code></pre>
-
-      <h3>Vantagens Sobre React/Vue Para Casos Simples</h3>
-      <ul>
-        <li><strong>Zero dependências</strong> — Funciona em qualquer navegador moderno</li>
-        <li><strong>Encapsulamento nativo</strong> — Shadow DOM isola estilos automaticamente</li>
-        <li><strong>Reutilizável</strong> — Componentes funcionam em qualquer framework (ou sem framework)</li>
-        <li><strong>Mais leve</strong> — Sem bundle de framework, apenas JS vanilla</li>
-      </ul>
-
-      <h3>Suporte Atual dos Browsers (2025)</h3>
-      <ul>
-        <li>✅ Chrome/Edge: Suporte completo desde 2019</li>
-        <li>✅ Firefox: Suporte completo desde 2020</li>
-        <li>✅ Safari: Suporte completo desde 2021</li>
-        <li>⚠️ IE 11: Sem suporte (descontinuado em 2022)</li>
-      </ul>
-
-      <h3>Quando Usar (e Quando NÃO Usar) Web Components</h3>
-      <p><strong>Use Web Components se:</strong></p>
-      <ul>
-        <li>Precisa de componentes simples e reutilizáveis</li>
-        <li>Quer evitar lock-in de framework</li>
-        <li>Trabalha em design systems que precisam funcionar em múltiplos contextos</li>
-      </ul>
-      <p><strong>Use React/Vue se:</strong></p>
-      <ul>
-        <li>Precisa de state management complexo</li>
-        <li>Aplicação é grande e SPA (Single Page App)</li>
-        <li>Precisa de tooling avançado e ecossistema rico</li>
-      </ul>
-
-      <h3>Exemplo Real: Web Components em Produção</h3>
-      <p>Grandes empresas como Salesforce, Adobe (com seu Spectrum Design System) e Google já usam Web Components em produção. E agora, em 2025, é seguro recomendá-los para novos projetos.</p>
-
-      <p><strong>Conclusão:</strong> Web Components não vai substituir React, mas oferece uma alternativa leve, nativa e padronizada para construir componentes modernos. Vale a pena explorar para seu próximo projeto.</p>
-    `
-  },
-  // ── POST 9: FORZA HORIZON 6 LANÇAMENTO ────
-  {
-    titulo: "Forza Horizon 6: Tudo Sobre o Jogo no Japão",
-    conteudo: "O mais aguardado jogo de corrida do ano chegou! Forza Horizon 6 leva os jogadores ao Japão com 550+ carros, o maior mapa da franquia, Touge Battles e nota 91 no Metacritic. Disponível no Game Pass desde 19 de maio.",
-    categoria: "Games",
-    data: "19/05/2026",
-    imagem: "./Imagens/Forza6.jpg",
-    conteudoCompleto: `
-      <p><strong>Forza Horizon 6</strong> finalmente chegou e superou as expectativas. Lançado em 19 de maio de 2026 para Xbox Series X|S, PC e disponível desde o primeiro dia no <strong>Xbox Game Pass</strong>, o jogo recebeu nota <strong>91 no Metacritic</strong>, consagrando-se como o melhor título da franquia até hoje.</p>
-
-      <h3>O Japão como Você Nunca Viu</h3>
-      <p>Pela primeira vez na história da franquia, o Festival Horizon desembarca no <strong>Japão</strong>. A Playground Games criou o maior mapa já visto num jogo Horizon, incluindo as ruas densas de <strong>Tóquio</strong>, os passes de montanha nevados dos Alpes japoneses, estradas costeiras e zonas rurais repletas de detalhes autênticos. Para garantir a fidelidade cultural, o estúdio contou com a consultora cultural <strong>Kyoko Yamashita</strong>.</p>
-
-      <h3>Novidades de Gameplay</h3>
-      <ul>
-        <li><strong>Touge Battles</strong> — Duelos 1v1 em estradas sinuosas de montanha, inspirados na cultura automobilística japonesa</li>
-        <li><strong>Goliath de 80 km</strong> — A maior corrida da história da franquia</li>
-        <li><strong>Stunt Party</strong> — Novo nome e novas mecânicas do modo cooperativo Forzathon Live</li>
-        <li><strong>Battle Royale</strong> — Modo inédito começando com o Honda City 1984</li>
-        <li><strong>Legend Island</strong> — Área exclusiva desbloqueada por jogadores no ranking mais alto</li>
-        <li><strong>Aftermarket Cars</strong> — Carros de eventos anteriores disponíveis em pontos de venda pelo mapa</li>
-        <li><strong>Diário de Coleção</strong> — Inspirado na tradição japonesa de colecionar selos, registra memórias e pontos do mapa explorados</li>
-        <li><strong>CoLab</strong> — EventLab atualizado com suporte a multiplayer para criar eventos customizados com amigos</li>
-      </ul>
-
-      <h3>A Maior Garagem da Franquia</h3>
-      <p>FH6 chega com <strong>550+ veículos</strong> desde o lançamento — o maior número já visto em um Horizon no dia de estreia. Os carros de capa são o <strong>Toyota 2025 GR GT Prototype</strong> e modelos icônicos da cultura JDM. Quem comprar a edição Premium recebe um exclusivo Ferrari J50 pré-tunado.</p>
-
-      <h3>Desempenho Técnico</h3>
-      <ul>
-        <li><strong>Xbox Series X — Modo Qualidade:</strong> 4K nativo a 30 fps</li>
-        <li><strong>Xbox Series X — Modo Performance:</strong> 4K dinâmico a 60 fps</li>
-        <li><strong>Xbox Series S — Modo Qualidade:</strong> 1440p a 30 fps</li>
-        <li><strong>Xbox Series S — Modo Performance:</strong> 1080p a 60 fps</li>
-        <li><strong>PC mínimo:</strong> Intel i5 de 8ª geração, 16 GB RAM, GTX 1650</li>
-      </ul>
-
-      <h3>Trilha Sonora Histórica</h3>
-      <p>FH6 conta com o <strong>maior número de faixas já visto na série</strong>, distribuídas em 9 estações de rádio que cobrem drum & bass, electropop, synthwave, rock pesado, hip-hop, música clássica moderna e indie alternativo.</p>
-
-      <h3>O Que a Crítica Disse</h3>
-      <ul>
-        <li><strong>GamesRadar+:</strong> "O melhor Forza Horizon até hoje. Facilmente 100 horas de conteúdo solo de alta qualidade."</li>
-        <li><strong>Game Informer:</strong> "Impressiona a cada curva, entregando um dos maiores jogos de corrida desta geração."</li>
-        <li><strong>Eurogamer:</strong> "Pega as lições de 14 anos de história e as aplica com muito estilo."</li>
-      </ul>
-
-      <p><strong>PS5:</strong> confirmada para o final de 2026, sem data oficial definida. Preço no Brasil: R$ 299 na versão padrão.</p>
-
-      <p><strong>Veredicto:</strong> Se você tem Xbox Game Pass, não há desculpa para não jogar. Forza Horizon 6 é um showcase glorioso do que os jogos de corrida podem ser.</p>
-    `
-  },
-  // ── POST 11: GTA 6 ────────────────────────
+  // ── POST 9: GTA 6 ────────────────────────
   {
     titulo: "GTA 6: Tudo que Sabemos Sobre o Jogo Mais Aguardado da Década",
     conteudo: "GTA 6 chega em 19 de novembro de 2026 para PS5 e Xbox Series X|S. Dois protagonistas, Vice City renovada, gráficos com ray tracing global e a história de Lucia e Jason. Confira o guia completo.",
@@ -443,95 +185,54 @@ customElements.define('my-card', MyCard);</code></pre>
       <p><strong>Previsão:</strong> Com campanha de marketing prevista para começar no verão de 2026, espere novos trailers e revelações de gameplay em breve.</p>
     `
   },
-  // ── POST 12: TECNOLOGIA IA 2026 ───────────
+  // ── POST 17 ───────────────────────────────
   {
-    titulo: "IA em 2026: GPT-5, Gemini Ultra 2 e a Guerra dos Modelos",
-    conteudo: "O mercado de inteligência artificial entrou em hipervelocidade. OpenAI, Google e Anthropic lançam modelos cada vez mais poderosos em 2026. Veja como essa corrida impacta desenvolvedores e empresas brasileiras.",
+    titulo: "NVIDIA e a Corrida da IA: Como a Empresa Virou o Centro do Mundo Tech",
+    conteudo: "A NVIDIA deixou de ser apenas uma fabricante de GPUs para se tornar a empresa mais valiosa do mundo em 2024–2026. Entenda como os chips H100 e Blackwell alimentam a revolução da IA e o que isso significa para o futuro.",
     categoria: "Tecnologia",
-    data: "14/05/2026",
-    imagem: "./Imagens/IA 2026.avif",
+    data: "18/05/2026",
+    imagem: "./Imagens/NvidiaLogo.avif",
     conteudoCompleto: `
-      <p>2026 está provando ser o ano em que a inteligência artificial deixou de ser promessa e se tornou infraestrutura crítica. Com <strong>GPT-5</strong>, <strong>Gemini Ultra 2</strong> e <strong>Claude 4</strong> competindo diretamente, empresas e desenvolvedores estão diante de escolhas que vão definir o próximo ciclo tecnológico.</p>
+      <p>Em 2024, a <strong>NVIDIA</strong> ultrapassou Apple e Microsoft para se tornar a empresa mais valiosa do mundo, com capitalização de mercado acima de US$ 3 trilhões. A razão: seus chips de GPU se tornaram a infraestrutura fundamental sobre a qual toda a revolução da inteligência artificial é construída.</p>
 
-      <h3>A Corrida dos Modelos</h3>
-      <p>Os três grandes players apostam em abordagens distintas:</p>
+      <h3>Por Que as GPUs NVIDIA São Essenciais para IA?</h3>
+      <p>Treinar modelos de IA envolve bilhões de operações matemáticas paralelas. As CPUs tradicionais processam tarefas em sequência; as GPUs NVIDIA processam milhares simultaneamente. Com o CUDA — plataforma de computação paralela da NVIDIA — os pesquisadores criaram um ecossistema que levou décadas para amadurecer e é extremamente difícil de replicar.</p>
+
+      <h3>Os Chips que Alimentam a IA Global</h3>
       <ul>
-        <li><strong>OpenAI (GPT-5):</strong> Foco em raciocínio avançado, contexto de 1 milhão de tokens e capacidades multimodais aprimoradas. Preço premium, mas ainda o mais adotado em produção</li>
-        <li><strong>Google (Gemini Ultra 2):</strong> Integração nativa com Google Workspace, Android e Search. Vantagem competitiva em contexto extremamente longo (2M+ tokens)</li>
-        <li><strong>Anthropic (Claude 4):</strong> Líder em segurança e seguimento de instruções complexas. Favorito de empresas com requisitos regulatórios estritos</li>
-        <li><strong>DeepSeek (R2):</strong> Opção open-source de altíssima performance a custo mínimo — ainda a escolha de startups e devs independentes</li>
+        <li><strong>H100 (Hopper):</strong> o chip que treinou GPT-4, Llama, Gemini e praticamente todo LLM moderno. Um servidor com 8 H100s custa US$ 200–300 mil</li>
+        <li><strong>H200:</strong> versão aprimorada com memória HBM3e — 60% mais rápido em inferência que o H100</li>
+        <li><strong>B100/B200 (Blackwell):</strong> nova geração lançada em 2025, com desempenho de inferência até 5x superior ao H100</li>
+        <li><strong>GB200 NVL72:</strong> rack completo com 72 GPUs interconectadas — a unidade de computação mais poderosa já vendida comercialmente</li>
       </ul>
 
-      <h3>O Impacto no Mercado Brasileiro</h3>
-      <p>O Brasil emerge como um dos maiores mercados de IA da América Latina. Empresas como Nubank, iFood e Magalu já integram modelos de IA em fluxos críticos. O mercado de startups de IA brasileiras cresceu 340% em investimentos desde 2024, segundo dados da ABID.</p>
-
-      <h3>Agentes de IA: A Nova Fronteira</h3>
-      <p>O termo do ano é <strong>"agentes de IA"</strong> — sistemas que não apenas respondem perguntas, mas executam tarefas autonomamente: navegam na web, escrevem e executam código, gerenciam e-mails e interagem com APIs externas. Empresas como Salesforce, Microsoft e HubSpot já oferecem produtos baseados nesse paradigma.</p>
-
-      <h3>O Que Muda Para Desenvolvedores</h3>
+      <h3>Quem Compra Esses Chips?</h3>
       <ul>
-        <li>Habilidade de <strong>prompt engineering</strong> virou diferencial de mercado</li>
-        <li>Integração via API de LLMs já é requisito em muitas vagas sênior</li>
-        <li>Frameworks como LangChain, LlamaIndex e CrewAI dominam o ecossistema de agentes</li>
-        <li>Segurança de IA (AI safety) cresce como especialização técnica</li>
+        <li><strong>Microsoft:</strong> bilhões investidos para rodar Azure AI e OpenAI</li>
+        <li><strong>Google:</strong> data centers para Gemini e Google Cloud AI</li>
+        <li><strong>Meta:</strong> 350.000 H100s comprados para treinar Llama e sistemas de recomendação</li>
+        <li><strong>Amazon AWS, Oracle, xAI (Elon Musk):</strong> todos na fila por GPUs NVIDIA</li>
+        <li><strong>Governos:</strong> EUA, Japão, Arábia Saudita e outros investem em soberania computacional</li>
       </ul>
 
-      <h3>Riscos e Debates</h3>
-      <p>Com tanto poder concentrado, o debate regulatório se intensifica. A União Europeia implementa o AI Act em fases desde 2025. No Brasil, o marco regulatório de IA ainda está em discussão no Congresso. Questões de direitos autorais, desinformação e viés algorítmico estão no centro dos debates globais.</p>
+      <h3>O Poder do Ecossistema CUDA</h3>
+      <p>O verdadeiro fosso competitivo da NVIDIA não é o hardware — é o <strong>CUDA</strong>, lançado em 2006. Duas décadas de bibliotecas, ferramentas e conhecimento acumulado fazem com que mudar para hardware AMD ou Intel custe meses de reescrita de código para qualquer empresa de IA séria.</p>
 
-      <p><strong>Conclusão:</strong> Quem investir agora em habilidades de IA tem uma janela de vantagem competitiva de 2 a 3 anos. O momento é agora.</p>
+      <h3>O Que Isso Significa Para Desenvolvedores Brasileiros</h3>
+      <ul>
+        <li>Conhecimento em <strong>CUDA e computação paralela</strong> é uma das habilidades mais valorizadas globalmente</li>
+        <li>Empresas brasileiras que querem IA local precisam de GPUs NVIDIA — e o custo é alto</li>
+        <li>A escassez de chips criou oportunidade para cloud providers brasileiros como <strong>Cloudco e OVHcloud BR</strong></li>
+        <li>Engenheiros de ML com experiência em otimização de inferência em GPU recebem salários internacionais remotamente</li>
+      </ul>
+
+      <h3>Riscos e Concorrência</h3>
+      <p>A dominância da NVIDIA não é garantida para sempre. <strong>AMD MI300X</strong> ganhou tração em inferência. <strong>Google TPUs</strong> e <strong>AWS Trainium</strong> reduzem dependência interna. Startups como Groq e Cerebras apostam em arquiteturas radicalmente diferentes. E a China, bloqueada dos chips top da NVIDIA por restrições de exportação dos EUA, acelera desenvolvimento próprio.</p>
+
+      <p><strong>Conclusão:</strong> A NVIDIA construiu o equivalente digital das refinarias de petróleo da era da IA. Enquanto o mundo precisar treinar e rodar modelos de inteligência artificial em escala, os chips verdes continuarão no centro de tudo.</p>
     `
   },
-  // ── POST 13: XBOX GAME PASS ───────────────
-  {
-    titulo: "Xbox Game Pass em 2026: Vale a Pena Assinar?",
-    conteudo: "Com Forza Horizon 6, Gears of War E-Day, Halo: Campaign Evolved e Fable chegando ao Game Pass em 2026, a assinatura da Microsoft nunca foi tão recheada. Analisamos se vale o investimento para jogadores brasileiros.",
-    categoria: "Games",
-    data: "13/05/2026",
-    imagem: "./Imagens/GamePass.jpg",
-    conteudoCompleto: `
-      <p>2026 está sendo o ano mais forte da história do <strong>Xbox Game Pass</strong>. Com uma fila impressionante de exclusivos chegando ao catálogo já no dia de lançamento, a Microsoft finalmente entrega a promessa que fez há anos: transformar o Game Pass na "Netflix dos jogos".</p>
-
-      <h3>O Que Chega ao Game Pass em 2026</h3>
-      <ul>
-        <li><strong>Forza Horizon 6</strong> (19 de maio) — O maior jogo de corrida da geração, disponível no dia 1</li>
-        <li><strong>Gears of War: E-Day</strong> (segundo semestre) — Prequel que explora a origem do conflito com os Locust</li>
-        <li><strong>Halo: Campaign Evolved</strong> (segundo semestre) — Reimaginação do clássico original com gráficos modernos</li>
-        <li><strong>Fable</strong> (segundo semestre) — Reboot do RPG britânico lendário pela Playground Games</li>
-        <li><strong>Indiana Jones e o Grande Círculo</strong> (adicionado em 2025, ainda disponível)</li>
-      </ul>
-
-      <h3>Planos e Preços (Brasil — maio 2026)</h3>
-      <ul>
-        <li><strong>Game Pass Core:</strong> R$ 29,99/mês — Catálogo de jogos + multiplayer online</li>
-        <li><strong>Game Pass Standard:</strong> R$ 44,99/mês — Catálogo maior + desconto em jogos</li>
-        <li><strong>Game Pass Ultimate:</strong> R$ 59,99/mês — Tudo incluso + EA Play + nuvem + PC</li>
-      </ul>
-
-      <h3>Vale Mais Que Comprar os Jogos?</h3>
-      <p>Faça a conta: Forza Horizon 6 custa R$ 299. Fable provavelmente R$ 299–349. Gears de E-Day mais R$ 299. Só esses três jogos somam <strong>R$ 900+</strong>. Com o Game Pass Ultimate a R$ 59,99/mês, em 5 meses você acessa todos eles — mais os outros centenas do catálogo.</p>
-
-      <h3>Prós do Game Pass</h3>
-      <ul>
-        <li>Jogos no dia de lançamento sem custo adicional</li>
-        <li>Acesso a centenas de títulos de diferentes gêneros</li>
-        <li>Play Anywhere — jogue no console E no PC com uma licença</li>
-        <li>Xbox Cloud Gaming — jogue em smartphone, tablet e TV sem hardware potente</li>
-        <li>Desconto de 20% em compras de jogos e DLCs</li>
-      </ul>
-
-      <h3>Contras do Game Pass</h3>
-      <ul>
-        <li>Jogos podem sair do catálogo sem aviso prévio</li>
-        <li>Você não é dono dos jogos — se cancelar, perde o acesso</li>
-        <li>Não disponível para PS5 (óbvio, mas importante)</li>
-        <li>Internet rápida necessária para Cloud Gaming</li>
-      </ul>
-
-      <p><strong>Veredicto:</strong> Para quem joga regularmente e tem interesse em pelo menos 3–4 exclusivos Xbox por ano, o Game Pass Ultimate é <strong>altamente recomendado</strong>. Com a lineup de 2026, é o melhor momento da história para assinar.</p>
-    `
-  },
-  // ── POST 14: REACT 20 ─────────────────────
+  // ── POST 14: REACT 19 ─────────────────────
   {
     titulo: "React 19 e o Futuro do Desenvolvimento Frontend",
     conteudo: "React 19 trouxe Server Components estáveis, Actions, o novo hook use() e melhorias massivas de performance. Saiba o que mudou e como migrar seus projetos em 2026.",
@@ -592,157 +293,95 @@ function Comments({ commentsPromise }) {
       <p><strong>Conclusão:</strong> React 19 não é uma reescrita — é uma evolução madura. As novas primitivas resolvem problemas reais de performance e DX que desenvolvedores enfrentavam há anos.</p>
     `
   },
-  // ── POST 15: PYTHON 2026 ──────────────────
+  // ── POST 8: FORZA HORIZON 6 ────
   {
-    titulo: "Python em 2026: Por Que Continua Sendo a Linguagem Número 1",
-    conteudo: "Python domina rankings de linguagens pelo quinto ano consecutivo. Da IA ao desenvolvimento web, passando por automação e ciência de dados, veja por que aprender Python em 2026 ainda é a melhor decisão.",
-    categoria: "Tecnologia",
-    data: "10/05/2026",
-    imagem: "./Imagens/Python.jpg",
+    titulo: "Forza Horizon 6: Tudo Sobre o Jogo no Japão",
+    conteudo: "O mais aguardado jogo de corrida do ano chegou! Forza Horizon 6 leva os jogadores ao Japão com 550+ carros, o maior mapa da franquia, Touge Battles e nota 91 no Metacritic. Disponível no Game Pass desde 19 de maio.",
+    categoria: "Games",
+    data: "19/05/2026",
+    imagem: "./Imagens/Forza6.jpg",
     conteudoCompleto: `
-      <p><strong>Python</strong> ocupa o topo do índice TIOBE pelo quinto ano consecutivo e continua sendo a linguagem mais ensinada em universidades, bootcamps e cursos online. Em 2026, com a explosão da IA, o Python se tornou ainda mais indispensável. Mas por quê, e o que aprender nele?</p>
+      <p><strong>Forza Horizon 6</strong> finalmente chegou e superou as expectativas. Lançado em 19 de maio de 2026 para Xbox Series X|S, PC e disponível desde o primeiro dia no <strong>Xbox Game Pass</strong>, o jogo recebeu nota <strong>91 no Metacritic</strong>, consagrando-se como o melhor título da franquia até hoje.</p>
 
-      <h3>Por Que Python Domina a IA?</h3>
-      <p>Praticamente todos os principais frameworks de machine learning e deep learning são escritos em Python ou têm Python como interface primária:</p>
+      <h3>O Japão como Você Nunca Viu</h3>
+      <p>Pela primeira vez na história da franquia, o Festival Horizon desembarca no <strong>Japão</strong>. A Playground Games criou o maior mapa já visto num jogo Horizon, incluindo as ruas densas de <strong>Tóquio</strong>, os passes de montanha nevados dos Alpes japoneses, estradas costeiras e zonas rurais repletas de detalhes autênticos. Para garantir a fidelidade cultural, o estúdio contou com a consultora cultural <strong>Kyoko Yamashita</strong>.</p>
+
+      <h3>Novidades de Gameplay</h3>
       <ul>
-        <li><strong>TensorFlow e Keras</strong> — Google</li>
-        <li><strong>PyTorch</strong> — Meta (favorito da academia e pesquisa)</li>
-        <li><strong>scikit-learn</strong> — ML clássico e rápido de prototipar</li>
-        <li><strong>Hugging Face Transformers</strong> — modelos de linguagem de última geração</li>
-        <li><strong>LangChain e LlamaIndex</strong> — frameworks para agentes e RAG</li>
+        <li><strong>Touge Battles</strong> — Duelos 1v1 em estradas sinuosas de montanha, inspirados na cultura automobilística japonesa</li>
+        <li><strong>Goliath de 80 km</strong> — A maior corrida da história da franquia</li>
+        <li><strong>Stunt Party</strong> — Novo nome e novas mecânicas do modo cooperativo Forzathon Live</li>
+        <li><strong>Battle Royale</strong> — Modo inédito começando com o Honda City 1984</li>
+        <li><strong>Legend Island</strong> — Área exclusiva desbloqueada por jogadores no ranking mais alto</li>
+        <li><strong>Aftermarket Cars</strong> — Carros de eventos anteriores disponíveis em pontos de venda pelo mapa</li>
+        <li><strong>Diário de Coleção</strong> — Inspirado na tradição japonesa de colecionar selos, registra memórias e pontos do mapa explorados</li>
+        <li><strong>CoLab</strong> — EventLab atualizado com suporte a multiplayer para criar eventos customizados com amigos</li>
       </ul>
 
-      <h3>Python 3.13: Novidades Importantes</h3>
+      <h3>A Maior Garagem da Franquia</h3>
+      <p>FH6 chega com <strong>550+ veículos</strong> desde o lançamento — o maior número já visto em um Horizon no dia de estreia. Os carros de capa são o <strong>Toyota 2025 GR GT Prototype</strong> e modelos icônicos da cultura JDM. Quem comprar a edição Premium recebe um exclusivo Ferrari J50 pré-tunado.</p>
+
+      <h3>Desempenho Técnico</h3>
       <ul>
-        <li><strong>Free-threaded mode (experimental)</strong> — remoção do GIL para paralelismo real</li>
-        <li><strong>JIT Compiler</strong> — melhoria de performance de até 5% em benchmarks reais</li>
-        <li><strong>Mensagens de erro aprimoradas</strong> — ainda mais claras para iniciantes</li>
-        <li><strong>REPL interativo melhorado</strong> — destaque de sintaxe e multi-linha mais suave</li>
+        <li><strong>Xbox Series X — Modo Qualidade:</strong> 4K nativo a 30 fps</li>
+        <li><strong>Xbox Series X — Modo Performance:</strong> 4K dinâmico a 60 fps</li>
+        <li><strong>Xbox Series S — Modo Qualidade:</strong> 1440p a 30 fps</li>
+        <li><strong>Xbox Series S — Modo Performance:</strong> 1080p a 60 fps</li>
+        <li><strong>PC mínimo:</strong> Intel i5 de 8ª geração, 16 GB RAM, GTX 1650</li>
       </ul>
 
-      <h3>Onde Python É Usado em 2026</h3>
+      <h3>Trilha Sonora Histórica</h3>
+      <p>FH6 conta com o <strong>maior número de faixas já visto na série</strong>, distribuídas em 9 estações de rádio que cobrem drum & bass, electropop, synthwave, rock pesado, hip-hop, música clássica moderna e indie alternativo.</p>
+
+      <h3>O Que a Crítica Disse</h3>
       <ul>
-        <li><strong>IA e ML:</strong> treinamento de modelos, fine-tuning, pipelines de dados</li>
-        <li><strong>Web Backend:</strong> FastAPI (mais popular que Flask em novos projetos), Django para sistemas complexos</li>
-        <li><strong>Automação:</strong> scripts, web scraping, automação de planilhas (openpyxl, pandas)</li>
-        <li><strong>Ciência de Dados:</strong> pandas, numpy, matplotlib, jupyter</li>
-        <li><strong>DevOps:</strong> automação de infraestrutura, scripts de CI/CD</li>
-        <li><strong>Segurança:</strong> pentest, análise de malware, forense digital</li>
+        <li><strong>GamesRadar+:</strong> "O melhor Forza Horizon até hoje. Facilmente 100 horas de conteúdo solo de alta qualidade."</li>
+        <li><strong>Game Informer:</strong> "Impressiona a cada curva, entregando um dos maiores jogos de corrida desta geração."</li>
+        <li><strong>Eurogamer:</strong> "Pega as lições de 14 anos de história e as aplica com muito estilo."</li>
       </ul>
 
-      <h3>O Que Aprender em Python em 2026 (Roadmap)</h3>
-      <ul>
-        <li>Fundamentos: variáveis, funções, listas, dicionários, loops</li>
-        <li>Orientação a Objetos: classes, herança, polimorfismo</li>
-        <li>Bibliotecas essenciais: requests, pandas, numpy</li>
-        <li>Frameworks web: FastAPI para APIs rápidas ou Django para sistemas completos</li>
-        <li>IA/ML: scikit-learn como porta de entrada, depois PyTorch</li>
-        <li>Agentes: LangChain ou CrewAI para automação com LLMs</li>
-      </ul>
+      <p><strong>PS5:</strong> confirmada para o final de 2026, sem data oficial definida. Preço no Brasil: R$ 299 na versão padrão.</p>
 
-      <h3>Salários em Python (Brasil — 2026)</h3>
-      <ul>
-        <li><strong>Júnior:</strong> R$ 3.500 – R$ 6.000/mês</li>
-        <li><strong>Pleno:</strong> R$ 7.000 – R$ 12.000/mês</li>
-        <li><strong>Sênior:</strong> R$ 14.000 – R$ 25.000/mês</li>
-        <li><strong>ML Engineer / Data Scientist:</strong> R$ 15.000 – R$ 35.000/mês</li>
-      </ul>
-
-      <p><strong>Conclusão:</strong> Python não está "na moda" — está na base. Enquanto a IA dominar o mercado de tecnologia, Python será a linguagem mais estratégica que você pode aprender.</p>
+      <p><strong>Veredicto:</strong> Se você tem Xbox Game Pass, não há desculpa para não jogar. Forza Horizon 6 é um showcase glorioso do que os jogos de corrida podem ser.</p>
     `
   },
-
-  // ── POST 16 ───────────────────────────────
+  // ── POST 12: TECNOLOGIA IA 2026 ───────────
   {
-    titulo: "NVIDIA GeForce RTX 5000: A Nova Geração de GPUs Chegou",
-    conteudo: "A NVIDIA apresentou a série RTX 5000 com arquitetura Blackwell, DLSS 4 e desempenho até 2x maior que a geração anterior. Veja o que mudou e qual placa vale o investimento em 2026.",
+    titulo: "IA em 2026: GPT-5, Gemini Ultra 2 e a Guerra dos Modelos",
+    conteudo: "O mercado de inteligência artificial entrou em hipervelocidade. OpenAI, Google e Anthropic lançam modelos cada vez mais poderosos em 2026. Veja como essa corrida impacta desenvolvedores e empresas brasileiras.",
     categoria: "Tecnologia",
-    data: "20/05/2026",
-    imagem: "./Imagens/RTX.avif",
+    data: "14/05/2026",
+    imagem: "./Imagens/IA 2026.avif",
     conteudoCompleto: `
-      <p>A <strong>NVIDIA GeForce RTX 5000</strong>, baseada na arquitetura <strong>Blackwell</strong>, representa o maior salto geracional da empresa desde a chegada do ray tracing com a RTX 2000. Com DLSS 4, novos Tensor Cores de 5ª geração e memória GDDR7, a linha redefine o que é possível em jogos, IA e criação de conteúdo.</p>
+      <p>2026 está provando ser o ano em que a inteligência artificial deixou de ser promessa e se tornou infraestrutura crítica. Com <strong>GPT-5</strong>, <strong>Gemini Ultra 2</strong> e <strong>Claude 4</strong> competindo diretamente, empresas e desenvolvedores estão diante de escolhas que vão definir o próximo ciclo tecnológico.</p>
 
-      <h3>A Linha RTX 5000 Completa</h3>
+      <h3>A Corrida dos Modelos</h3>
+      <p>Os três grandes players apostam em abordagens distintas:</p>
       <ul>
-        <li><strong>RTX 5090:</strong> 32 GB GDDR7, 1.79 TB/s de largura de banda — a placa mais poderosa da história para consumidores</li>
-        <li><strong>RTX 5080:</strong> 16 GB GDDR7 — melhor custo-benefício no topo de linha</li>
-        <li><strong>RTX 5070 Ti:</strong> 16 GB GDDR7 — desempenho de RTX 4090 por menos da metade do preço</li>
-        <li><strong>RTX 5070:</strong> 12 GB GDDR7 — substituta ideal da RTX 4070</li>
-        <li><strong>RTX 5060 Ti:</strong> 8–16 GB GDDR7 — o volume de mercado, lançada em maio 2026</li>
+        <li><strong>OpenAI (GPT-5):</strong> Foco em raciocínio avançado, contexto de 1 milhão de tokens e capacidades multimodais aprimoradas. Preço premium, mas ainda o mais adotado em produção</li>
+        <li><strong>Google (Gemini Ultra 2):</strong> Integração nativa com Google Workspace, Android e Search. Vantagem competitiva em contexto extremamente longo (2M+ tokens)</li>
+        <li><strong>Anthropic (Claude 4):</strong> Líder em segurança e seguimento de instruções complexas. Favorito de empresas com requisitos regulatórios estritos</li>
+        <li><strong>DeepSeek (R2):</strong> Opção open-source de altíssima performance a custo mínimo — ainda a escolha de startups e devs independentes</li>
       </ul>
 
-      <h3>DLSS 4: Multi Frame Generation</h3>
-      <p>A maior novidade técnica da geração é o <strong>DLSS 4 com Multi Frame Generation</strong>. Enquanto o DLSS 3 gerava 1 frame extra por frame renderizado, o DLSS 4 gera até <strong>3 frames extras</strong> usando IA — multiplicando o FPS por 4x em jogos compatíveis sem perda visual perceptível.</p>
+      <h3>O Impacto no Mercado Brasileiro</h3>
+      <p>O Brasil emerge como um dos maiores mercados de IA da América Latina. Empresas como Nubank, iFood e Magalu já integram modelos de IA em fluxos críticos. O mercado de startups de IA brasileiras cresceu 340% em investimentos desde 2024, segundo dados da ABID.</p>
+
+      <h3>Agentes de IA: A Nova Fronteira</h3>
+      <p>O termo do ano é <strong>"agentes de IA"</strong> — sistemas que não apenas respondem perguntas, mas executam tarefas autonomamente: navegam na web, escrevem e executam código, gerenciam e-mails e interagem com APIs externas. Empresas como Salesforce, Microsoft e HubSpot já oferecem produtos baseados nesse paradigma.</p>
+
+      <h3>O Que Muda Para Desenvolvedores</h3>
       <ul>
-        <li>Cyberpunk 2077: de 60 fps para 240+ fps com DLSS 4 ativo</li>
-        <li>Alan Wake 2 com Ray Tracing Pathtracing: jogável em 4K pela primeira vez em hardware consumer</li>
-        <li>Compatível retroativamente com placas RTX 4000 via atualização (apenas 1 frame extra)</li>
+        <li>Habilidade de <strong>prompt engineering</strong> virou diferencial de mercado</li>
+        <li>Integração via API de LLMs já é requisito em muitas vagas sênior</li>
+        <li>Frameworks como LangChain, LlamaIndex e CrewAI dominam o ecossistema de agentes</li>
+        <li>Segurança de IA (AI safety) cresce como especialização técnica</li>
       </ul>
 
-      <h3>Neural Rendering: O Futuro dos Gráficos</h3>
-      <p>A RTX 5000 introduz os <strong>Neural Shaders</strong> — pequenas redes neurais que rodam diretamente dentro dos shaders da GPU para renderização de materiais, iluminação e sombras com fidelidade sem precedentes. Jogos como <em>The Witcher 4</em> e <em>GTA 6</em> no PC prometem usar essa tecnologia.</p>
+      <h3>Riscos e Debates</h3>
+      <p>Com tanto poder concentrado, o debate regulatório se intensifica. A União Europeia implementa o AI Act em fases desde 2025. No Brasil, o marco regulatório de IA ainda está em discussão no Congresso. Questões de direitos autorais, desinformação e viés algorítmico estão no centro dos debates globais.</p>
 
-      <h3>Desempenho em IA Local</h3>
-      <p>Para desenvolvedores e criadores, a RTX 5000 é uma workstation de IA no desktop:</p>
-      <ul>
-        <li>RTX 5090 roda modelos LLM de até 70B de parâmetros localmente com quantização</li>
-        <li>Geração de imagens com Stable Diffusion XL: 3–5x mais rápido que RTX 4090</li>
-        <li>Edição de vídeo com IA no DaVinci Resolve e Premiere totalmente acelerada</li>
-      </ul>
-
-      <h3>Vale Atualizar da RTX 4000?</h3>
-      <p><strong>RTX 4090 → 5090:</strong> só se você usa IA local pesada ou quer o absoluto máximo em jogos. O salto existe, mas é caro.</p>
-      <p><strong>RTX 4070/4080 → 5070/5080:</strong> salto significativo. DLSS 4 Multi Frame Generation justifica a troca.</p>
-      <p><strong>RTX 3000 ou inferior → qualquer RTX 5000:</strong> atualize sem hesitar. A diferença é geracional.</p>
-
-      <p><strong>Conclusão:</strong> A série RTX 5000 é a geração mais ambiciosa da NVIDIA. Para quem pode pagar, entrega experiências impossíveis na geração anterior. Para quem não pode, as RTX 4000 continuam excelentes — e ficaram mais baratas com o lançamento da nova linha.</p>
-    `
-  },
-  // ── POST 17 ───────────────────────────────
-  {
-    titulo: "NVIDIA e a Corrida da IA: Como a Empresa Virou o Centro do Mundo Tech",
-    conteudo: "A NVIDIA deixou de ser apenas uma fabricante de GPUs para se tornar a empresa mais valiosa do mundo em 2024–2026. Entenda como os chips H100 e Blackwell alimentam a revolução da IA e o que isso significa para o futuro.",
-    categoria: "Tecnologia",
-    data: "18/05/2026",
-    imagem: "./Imagens/NvidiaLogo.avif",
-    conteudoCompleto: `
-      <p>Em 2024, a <strong>NVIDIA</strong> ultrapassou Apple e Microsoft para se tornar a empresa mais valiosa do mundo, com capitalização de mercado acima de US$ 3 trilhões. A razão: seus chips de GPU se tornaram a infraestrutura fundamental sobre a qual toda a revolução da inteligência artificial é construída.</p>
-
-      <h3>Por Que as GPUs NVIDIA São Essenciais para IA?</h3>
-      <p>Treinar modelos de IA envolve bilhões de operações matemáticas paralelas. As CPUs tradicionais processam tarefas em sequência; as GPUs NVIDIA processam milhares simultaneamente. Com o CUDA — plataforma de computação paralela da NVIDIA — os pesquisadores criaram um ecossistema que levou décadas para amadurecer e é extremamente difícil de replicar.</p>
-
-      <h3>Os Chips que Alimentam a IA Global</h3>
-      <ul>
-        <li><strong>H100 (Hopper):</strong> o chip que treinou GPT-4, Llama, Gemini e praticamente todo LLM moderno. Um servidor com 8 H100s custa US$ 200–300 mil</li>
-        <li><strong>H200:</strong> versão aprimorada com memória HBM3e — 60% mais rápido em inferência que o H100</li>
-        <li><strong>B100/B200 (Blackwell):</strong> nova geração lançada em 2025, com desempenho de inferência até 5x superior ao H100</li>
-        <li><strong>GB200 NVL72:</strong> rack completo com 72 GPUs interconectadas — a unidade de computação mais poderosa já vendida comercialmente</li>
-      </ul>
-
-      <h3>Quem Compra Esses Chips?</h3>
-      <ul>
-        <li><strong>Microsoft:</strong> bilhões investidos para rodar Azure AI e OpenAI</li>
-        <li><strong>Google:</strong> data centers para Gemini e Google Cloud AI</li>
-        <li><strong>Meta:</strong> 350.000 H100s comprados para treinar Llama e sistemas de recomendação</li>
-        <li><strong>Amazon AWS, Oracle, xAI (Elon Musk):</strong> todos na fila por GPUs NVIDIA</li>
-        <li><strong>Governos:</strong> EUA, Japão, Arábia Saudita e outros investem em soberania computacional</li>
-      </ul>
-
-      <h3>O Poder do Ecossistema CUDA</h3>
-      <p>O verdadeiro fosso competitivo da NVIDIA não é o hardware — é o <strong>CUDA</strong>, lançado em 2006. Duas décadas de bibliotecas, ferramentas e conhecimento acumulado fazem com que mudar para hardware AMD ou Intel custe meses de reescrita de código para qualquer empresa de IA séria.</p>
-
-      <h3>O Que Isso Significa Para Desenvolvedores Brasileiros</h3>
-      <ul>
-        <li>Conhecimento em <strong>CUDA e computação paralela</strong> é uma das habilidades mais valorizadas globalmente</li>
-        <li>Empresas brasileiras que querem IA local precisam de GPUs NVIDIA — e o custo é alto</li>
-        <li>A escassez de chips criou oportunidade para cloud providers brasileiros como <strong>Cloudco e OVHcloud BR</strong></li>
-        <li>Engenheiros de ML com experiência em otimização de inferência em GPU recebem salários internacionais remotamente</li>
-      </ul>
-
-      <h3>Riscos e Concorrência</h3>
-      <p>A dominância da NVIDIA não é garantida para sempre. <strong>AMD MI300X</strong> ganhou tração em inferência. <strong>Google TPUs</strong> e <strong>AWS Trainium</strong> reduzem dependência interna. Startups como Groq e Cerebras apostam em arquiteturas radicalmente diferentes. E a China, bloqueada dos chips top da NVIDIA por restrições de exportação dos EUA, acelera desenvolvimento próprio.</p>
-
-      <p><strong>Conclusão:</strong> A NVIDIA construiu o equivalente digital das refinarias de petróleo da era da IA. Enquanto o mundo precisar treinar e rodar modelos de inteligência artificial em escala, os chips verdes continuarão no centro de tudo.</p>
+      <p><strong>Conclusão:</strong> Quem investir agora em habilidades de IA tem uma janela de vantagem competitiva de 2 a 3 anos. O momento é agora.</p>
     `
   },
   // ── POST 18 ───────────────────────────────
@@ -901,6 +540,171 @@ pm2 monit</code></pre>
       <p><strong>Conclusão:</strong> Node.js em produção exige disciplina. Seguindo essas práticas você escreve código mais seguro, escalável e fácil de manter — independente do tamanho do projeto.</p>
     `
   },
+  // ── POST 4: DEEPSEEK ─────────────────────
+  {
+    titulo: "DeepSeek e o Novo Cenário da IA em 2025",
+    conteudo: "A startup chinesa DeepSeek lançou modelos de IA que rivalizam com GPT-4 a uma fração do custo, remodelando o mercado global de inteligência artificial e acendendo debates sobre soberania tecnológica.",
+    categoria: "Tecnologia",
+    data: "10/05/2025",
+    imagem: "./Imagens/DeepSeek.avif",
+    conteudoCompleto: `
+      <p>Em janeiro de 2025, a startup chinesa <strong>DeepSeek</strong> chocou o mundo da tecnologia ao lançar seu modelo de IA <strong>R1</strong>, capaz de rivalizar com o GPT-4 da OpenAI em várias tarefas, mas com um diferencial revolucionário: o custo de inferência é apenas uma fração do que os modelos americanos cobram.</p>
+
+      <p>O impacto foi imediato no mercado de ações. Empresas de IA americana como NVIDIA, OpenAI e Anthropic viram suas avaliações caírem enquanto a comunidade de tecnologia debatia as implicações geopolíticas. <strong>Como uma startup chinesa conseguiu alcançar esse nível?</strong> A resposta envolve eficiência extrema de código, otimizações de hardware e uma abordagem diferente ao treinamento de modelos.</p>
+
+      <h3>O Que Torna o DeepSeek R1 Especial?</h3>
+      <ul>
+        <li><strong>Custo 90% menor</strong> — Inferência por token significativamente mais barata que GPT-4</li>
+        <li><strong>Open-source</strong> — Código e pesos disponíveis para download e deploy local</li>
+        <li><strong>Raciocínio longado</strong> — Similar ao o1 da OpenAI, capaz de resolver problemas complexos passo-a-passo</li>
+        <li><strong>Suporte multilíngue</strong> — Desempenho robusto em português, chinês e outras línguas</li>
+      </ul>
+
+      <h3>O Debate: Open-Source vs. Closed-Source</h3>
+      <p>A liberação do DeepSeek em open-source reavivou discussões sobre segurança, controle e acesso democratizado. Desenvolvedores brasileiros agora podem executar modelos de IA de ponta localmente, sem depender de APIs pagas. Mas qual é o trade-off entre liberdade e segurança?</p>
+
+      <h3>O Que Isso Significa Para Desenvolvedores Brasileiros</h3>
+      <p>A chegada do DeepSeek abre portas: projetos de IA são agora mais acessíveis financeiramente, plataformas locais podem rodar modelos avançados, e o ecossistema de startups brasileiras ganha uma ferramenta poderosa. Ao mesmo tempo, reforça a urgência de investimento em pesquisa e tecnologia nacional.</p>
+
+      <p><strong>Conclusão:</strong> DeepSeek não é apenas um modelo; é um desafio ao status quo. 2025 promete ser o ano em que IA deixa de ser privilégio de gigantes americanas e se torna verdadeiramente global.</p>
+    `
+  },
+  // ── POST 16: RTX 5000 ───────────────────────────────
+  {
+    titulo: "NVIDIA GeForce RTX 5000: A Nova Geração de GPUs Chegou",
+    conteudo: "A NVIDIA apresentou a série RTX 5000 com arquitetura Blackwell, DLSS 4 e desempenho até 2x maior que a geração anterior. Veja o que mudou e qual placa vale o investimento em 2026.",
+    categoria: "Tecnologia",
+    data: "20/05/2026",
+    imagem: "./Imagens/RTX.avif",
+    conteudoCompleto: `
+      <p>A <strong>NVIDIA GeForce RTX 5000</strong>, baseada na arquitetura <strong>Blackwell</strong>, representa o maior salto geracional da empresa desde a chegada do ray tracing com a RTX 2000. Com DLSS 4, novos Tensor Cores de 5ª geração e memória GDDR7, a linha redefine o que é possível em jogos, IA e criação de conteúdo.</p>
+
+      <h3>A Linha RTX 5000 Completa</h3>
+      <ul>
+        <li><strong>RTX 5090:</strong> 32 GB GDDR7, 1.79 TB/s de largura de banda — a placa mais poderosa da história para consumidores</li>
+        <li><strong>RTX 5080:</strong> 16 GB GDDR7 — melhor custo-benefício no topo de linha</li>
+        <li><strong>RTX 5070 Ti:</strong> 16 GB GDDR7 — desempenho de RTX 4090 por menos da metade do preço</li>
+        <li><strong>RTX 5070:</strong> 12 GB GDDR7 — substituta ideal da RTX 4070</li>
+        <li><strong>RTX 5060 Ti:</strong> 8–16 GB GDDR7 — o volume de mercado, lançada em maio 2026</li>
+      </ul>
+
+      <h3>DLSS 4: Multi Frame Generation</h3>
+      <p>A maior novidade técnica da geração é o <strong>DLSS 4 com Multi Frame Generation</strong>. Enquanto o DLSS 3 gerava 1 frame extra por frame renderizado, o DLSS 4 gera até <strong>3 frames extras</strong> usando IA — multiplicando o FPS por 4x em jogos compatíveis sem perda visual perceptível.</p>
+      <ul>
+        <li>Cyberpunk 2077: de 60 fps para 240+ fps com DLSS 4 ativo</li>
+        <li>Alan Wake 2 com Ray Tracing Pathtracing: jogável em 4K pela primeira vez em hardware consumer</li>
+        <li>Compatível retroativamente com placas RTX 4000 via atualização (apenas 1 frame extra)</li>
+      </ul>
+
+      <h3>Neural Rendering: O Futuro dos Gráficos</h3>
+      <p>A RTX 5000 introduz os <strong>Neural Shaders</strong> — pequenas redes neurais que rodam diretamente dentro dos shaders da GPU para renderização de materiais, iluminação e sombras com fidelidade sem precedentes. Jogos como <em>The Witcher 4</em> e <em>GTA 6</em> no PC prometem usar essa tecnologia.</p>
+
+      <h3>Desempenho em IA Local</h3>
+      <p>Para desenvolvedores e criadores, a RTX 5000 é uma workstation de IA no desktop:</p>
+      <ul>
+        <li>RTX 5090 roda modelos LLM de até 70B de parâmetros localmente com quantização</li>
+        <li>Geração de imagens com Stable Diffusion XL: 3–5x mais rápido que RTX 4090</li>
+        <li>Edição de vídeo com IA no DaVinci Resolve e Premiere totalmente acelerada</li>
+      </ul>
+
+      <h3>Vale Atualizar da RTX 4000?</h3>
+      <p><strong>RTX 4090 → 5090:</strong> só se você usa IA local pesada ou quer o absoluto máximo em jogos. O salto existe, mas é caro.</p>
+      <p><strong>RTX 4070/4080 → 5070/5080:</strong> salto significativo. DLSS 4 Multi Frame Generation justifica a troca.</p>
+      <p><strong>RTX 3000 ou inferior → qualquer RTX 5000:</strong> atualize sem hesitar. A diferença é geracional.</p>
+
+      <p><strong>Conclusão:</strong> A série RTX 5000 é a geração mais ambiciosa da NVIDIA. Para quem pode pagar, entrega experiências impossíveis na geração anterior. Para quem não pode, as RTX 4000 continuam excelentes — e ficaram mais baratas com o lançamento da nova linha.</p>
+    `
+  },
+  // ── POST 13: XBOX GAME PASS ───────────────
+  {
+    titulo: "Xbox Game Pass em 2026: Vale a Pena Assinar?",
+    conteudo: "Com Forza Horizon 6, Gears of War E-Day, Halo: Campaign Evolved e Fable chegando ao Game Pass em 2026, a assinatura da Microsoft nunca foi tão recheada. Analisamos se vale o investimento para jogadores brasileiros.",
+    categoria: "Games",
+    data: "13/05/2026",
+    imagem: "./Imagens/GamePass.jpg",
+    conteudoCompleto: `
+      <p>2026 está sendo o ano mais forte da história do <strong>Xbox Game Pass</strong>. Com uma fila impressionante de exclusivos chegando ao catálogo já no dia de lançamento, a Microsoft finalmente entrega a promessa que fez há anos: transformar o Game Pass na "Netflix dos jogos".</p>
+
+      <h3>O Que Chega ao Game Pass em 2026</h3>
+      <ul>
+        <li><strong>Forza Horizon 6</strong> (19 de maio) — O maior jogo de corrida da geração, disponível no dia 1</li>
+        <li><strong>Gears of War: E-Day</strong> (segundo semestre) — Prequel que explora a origem do conflito com os Locust</li>
+        <li><strong>Halo: Campaign Evolved</strong> (segundo semestre) — Reimaginação do clássico original com gráficos modernos</li>
+        <li><strong>Fable</strong> (segundo semestre) — Reboot do RPG britânico lendário pela Playground Games</li>
+        <li><strong>Indiana Jones e o Grande Círculo</strong> (adicionado em 2025, ainda disponível)</li>
+      </ul>
+
+      <h3>Planos e Preços (Brasil — maio 2026)</h3>
+      <ul>
+        <li><strong>Game Pass Core:</strong> R$ 29,99/mês — Catálogo de jogos + multiplayer online</li>
+        <li><strong>Game Pass Standard:</strong> R$ 44,99/mês — Catálogo maior + desconto em jogos</li>
+        <li><strong>Game Pass Ultimate:</strong> R$ 59,99/mês — Tudo incluso + EA Play + nuvem + PC</li>
+      </ul>
+
+      <h3>Vale Mais Que Comprar os Jogos?</h3>
+      <p>Faça a conta: Forza Horizon 6 custa R$ 299. Fable provavelmente R$ 299–349. Gears de E-Day mais R$ 299. Só esses três jogos somam <strong>R$ 900+</strong>. Com o Game Pass Ultimate a R$ 59,99/mês, em 5 meses você acessa todos eles — mais os outros centenas do catálogo.</p>
+
+      <h3>Prós do Game Pass</h3>
+      <ul>
+        <li>Jogos no dia de lançamento sem custo adicional</li>
+        <li>Acesso a centenas de títulos de diferentes gêneros</li>
+        <li>Play Anywhere — jogue no console E no PC com uma licença</li>
+        <li>Xbox Cloud Gaming — jogue em smartphone, tablet e TV sem hardware potente</li>
+        <li>Desconto de 20% em compras de jogos e DLCs</li>
+      </ul>
+
+      <h3>Contras do Game Pass</h3>
+      <ul>
+        <li>Jogos podem sair do catálogo sem aviso prévio</li>
+        <li>Você não é dono dos jogos — se cancelar, perde o acesso</li>
+        <li>Não disponível para PS5 (óbvio, mas importante)</li>
+        <li>Internet rápida necessária para Cloud Gaming</li>
+      </ul>
+
+      <p><strong>Veredicto:</strong> Para quem joga regularmente e tem interesse em pelo menos 3–4 exclusivos Xbox por ano, o Game Pass Ultimate é <strong>altamente recomendado</strong>. Com a lineup de 2026, é o melhor momento da história para assinar.</p>
+    `
+  },
+  // ── POST 6: BITCOIN ─────────────────────
+  {
+    titulo: "Bitcoin a US$100 Mil: Entenda o que Aconteceu e o que Vem a Seguir",
+    conteudo: "O Bitcoin ultrapassou a barreira dos US$100.000 no fim de 2024 e segue volátil em 2025. Entenda os fatores por trás da alta histórica, o papel dos ETFs spot, o halving e o que analistas projetam para o restante do ano.",
+    categoria: "Dinheiro",
+    data: "13/05/2025",
+    imagem: "./Imagens/Bitcoin.avif",
+    conteudoCompleto: `
+      <p>Em dezembro de 2024, o Bitcoin alcançou um marco histórico: <strong>ultrapassou US$100 mil</strong> pela primeira vez. Continuamos em 2025 e o ativo permanece volátil, oscilando entre US$90 e US$110 mil. <strong>Como chegamos aqui? E para onde vai?</strong></p>
+
+      <h3>Cronologia da Alta de 2024–2025</h3>
+      <ul>
+        <li><strong>Janeiro 2024:</strong> Bitcoin em US$50 mil</li>
+        <li><strong>Julho 2024:</strong> Halving reduz recompensa por bloco de 6.5 para 3.125 BTC</li>
+        <li><strong>Setembro 2024:</strong> Aprovação esperada dos ETFs spot nos EUA</li>
+        <li><strong>Dezembro 2024:</strong> Bitcoin atinge US$108 mil com aprovação dos ETFs confirmada</li>
+        <li><strong>Maio 2025:</strong> Volatilidade continua em torno de US$100 mil</li>
+      </ul>
+
+      <h3>O Papel Crítico dos ETFs Spot</h3>
+      <p>Os <strong>Bitcoin Spot ETFs</strong> aprovados pela SEC em janeiro de 2024 revolucionaram o acesso: investidores institucionais e pessoas comuns podem agora comprar BTC via corretoras tradicionais, sem tocar em exchanges cripto. <strong>Impacto:</strong> entrada de bilhões em capital institucional.</p>
+
+      <h3>O Halving de Abril de 2024</h3>
+      <p>Ocorre a cada 4 anos, reduzindo as recompensas de mineração pela metade. Isso diminui a inflação do Bitcoin e historicamente precede altas de preço. O padrão: halving → escassez → demanda → alta de preço.</p>
+
+      <h3>Projeções Para 2025</h3>
+      <p><strong>Cenário otimista:</strong> US$150–200 mil (pressão institucional, aprovação de mais ETFs internacionais).</p>
+      <p><strong>Cenário realista:</strong> US$80–120 mil (consolidação, ciclos de ganhos e perdas).</p>
+      <p><strong>Cenário pessimista:</strong> US$40–60 mil (recessão econômica, regulação restritiva).</p>
+
+      <h3>Como Brasileiros Podem Acessar Cripto com Segurança</h3>
+      <ul>
+        <li><strong>Exchanges reguladas:</strong> Coinbase, Kraken (com suporte a BRL), Mercado Bitcoin</li>
+        <li><strong>Impostos:</strong> Ganhos em cripto são tributáveis. Mantenha registros de compra/venda</li>
+        <li><strong>Segurança:</strong> Use hardware wallets (Ledger, Trezor) para valores acima de US$1k</li>
+        <li><strong>Diversificação:</strong> Cripto deve representar &lt;5–10% da carteira total</li>
+      </ul>
+
+      <p><strong>Dica final:</strong> Não tente prever o preço exato. Bitcoin é especulativo e volátil. Invista apenas o que pode perder e mantenha visão de longo prazo (5+ anos).</p>
+    `
+  },
   // ── POST 19 ───────────────────────────────
   {
     titulo: "Freelancer de Tech em 2026: Como Cobrar e Onde Encontrar Clientes",
@@ -953,8 +757,202 @@ pm2 monit</code></pre>
 
       <p><strong>Dica final:</strong> Comece com um nicho, construa 3 cases reais (mesmo que gratuitos no início) e documente os resultados com números. Um case bem contado vale mais que 10 anos de experiência no currículo.</p>
     `
+  },
+  // ── POST 7: WEB COMPONENTS ─────────────────────
+  {
+    titulo: "Web Components em 2025: HTML Nativo Finalmente Maduro",
+    conteudo: "Web Components — Custom Elements, Shadow DOM e HTML Templates — finalmente têm suporte total em todos os browsers modernos. Descubra como criar componentes reutilizáveis sem nenhum framework.",
+    categoria: "HTML",
+    data: "14/05/2025",
+    imagem: "./Imagens/WebComponents.avif",
+    conteudoCompleto: `
+      <p>Por anos, Web Components foi a promessa não cumprida: criar componentes nativos em HTML sem depender de React, Vue ou Angular. Mas em 2025, <strong>finalmente chegamos ao ponto em que Web Components funciona, é confiável, e tem suporte total em todos os browsers modernos</strong>.</p>
+
+      <h3>O Que São Web Components?</h3>
+      <p>Web Components é um conjunto de APIs nativas do navegador que permitem criar elementos HTML customizados e reutilizáveis:</p>
+      <ul>
+        <li><strong>Custom Elements</strong> — Defina seus próprios tags HTML</li>
+        <li><strong>Shadow DOM</strong> — Encapsule estilos e marcação isolados</li>
+        <li><strong>HTML Templates</strong> — Templates que não renderizam até serem clonados</li>
+        <li><strong>Slots</strong> — Adicione pontos de inserção dinâmicos</li>
+      </ul>
+
+      <h3>Exemplo Prático: Componente &lt;my-card&gt;</h3>
+      <pre><code>class MyCard extends HTMLElement {
+  connectedCallback() {
+    const title = this.getAttribute('title');
+    this.innerHTML = \`
+      <div class="card">
+        <h2>\${title}</h2>
+        <slot></slot>
+      </div>
+    \`;
   }
-  
+}
+customElements.define('my-card', MyCard);</code></pre>
+
+      <p>Uso no HTML:</p>
+      <pre><code>&lt;my-card title="Hello"&gt;
+  Conteúdo aqui!
+&lt;/my-card&gt;</code></pre>
+
+      <h3>Vantagens Sobre React/Vue Para Casos Simples</h3>
+      <ul>
+        <li><strong>Zero dependências</strong> — Funciona em qualquer navegador moderno</li>
+        <li><strong>Encapsulamento nativo</strong> — Shadow DOM isola estilos automaticamente</li>
+        <li><strong>Reutilizável</strong> — Componentes funcionam em qualquer framework (ou sem framework)</li>
+        <li><strong>Mais leve</strong> — Sem bundle de framework, apenas JS vanilla</li>
+      </ul>
+
+      <h3>Suporte Atual dos Browsers (2025)</h3>
+      <ul>
+        <li>✅ Chrome/Edge: Suporte completo desde 2019</li>
+        <li>✅ Firefox: Suporte completo desde 2020</li>
+        <li>✅ Safari: Suporte completo desde 2021</li>
+        <li>⚠️ IE 11: Sem suporte (descontinuado em 2022)</li>
+      </ul>
+
+      <h3>Quando Usar (e Quando NÃO Usar) Web Components</h3>
+      <p><strong>Use Web Components se:</strong></p>
+      <ul>
+        <li>Precisa de componentes simples e reutilizáveis</li>
+        <li>Quer evitar lock-in de framework</li>
+        <li>Trabalha em design systems que precisam funcionar em múltiplos contextos</li>
+      </ul>
+      <p><strong>Use React/Vue se:</strong></p>
+      <ul>
+        <li>Precisa de state management complexo</li>
+        <li>Aplicação é grande e SPA (Single Page App)</li>
+        <li>Precisa de tooling avançado e ecossistema rico</li>
+      </ul>
+
+      <h3>Exemplo Real: Web Components em Produção</h3>
+      <p>Grandes empresas como Salesforce, Adobe (com seu Spectrum Design System) e Google já usam Web Components em produção. E agora, em 2025, é seguro recomendá-los para novos projetos.</p>
+
+      <p><strong>Conclusão:</strong> Web Components não vai substituir React, mas oferece uma alternativa leve, nativa e padronizada para construir componentes modernos. Vale a pena explorar para seu próximo projeto.</p>
+    `
+  },
+  // ── POST 15: PYTHON 2026 ──────────────────
+  {
+    titulo: "Python em 2026: Por Que Continua Sendo a Linguagem Número 1",
+    conteudo: "Python domina rankings de linguagens pelo quinto ano consecutivo. Da IA ao desenvolvimento web, passando por automação e ciência de dados, veja por que aprender Python em 2026 ainda é a melhor decisão.",
+    categoria: "Tecnologia",
+    data: "10/05/2026",
+    imagem: "./Imagens/Python.jpg",
+    conteudoCompleto: `
+      <p><strong>Python</strong> ocupa o topo do índice TIOBE pelo quinto ano consecutivo e continua sendo a linguagem mais ensinada em universidades, bootcamps e cursos online. Em 2026, com a explosão da IA, o Python se tornou ainda mais indispensável. Mas por quê, e o que aprender nele?</p>
+
+      <h3>Por Que Python Domina a IA?</h3>
+      <p>Praticamente todos os principais frameworks de machine learning e deep learning são escritos em Python ou têm Python como interface primária:</p>
+      <ul>
+        <li><strong>TensorFlow e Keras</strong> — Google</li>
+        <li><strong>PyTorch</strong> — Meta (favorito da academia e pesquisa)</li>
+        <li><strong>scikit-learn</strong> — ML clássico e rápido de prototipar</li>
+        <li><strong>Hugging Face Transformers</strong> — modelos de linguagem de última geração</li>
+        <li><strong>LangChain e LlamaIndex</strong> — frameworks para agentes e RAG</li>
+      </ul>
+
+      <h3>Python 3.13: Novidades Importantes</h3>
+      <ul>
+        <li><strong>Free-threaded mode (experimental)</strong> — remoção do GIL para paralelismo real</li>
+        <li><strong>JIT Compiler</strong> — melhoria de performance de até 5% em benchmarks reais</li>
+        <li><strong>Mensagens de erro aprimoradas</strong> — ainda mais claras para iniciantes</li>
+        <li><strong>REPL interativo melhorado</strong> — destaque de sintaxe e multi-linha mais suave</li>
+      </ul>
+
+      <h3>Onde Python É Usado em 2026</h3>
+      <ul>
+        <li><strong>IA e ML:</strong> treinamento de modelos, fine-tuning, pipelines de dados</li>
+        <li><strong>Web Backend:</strong> FastAPI (mais popular que Flask em novos projetos), Django para sistemas complexos</li>
+        <li><strong>Automação:</strong> scripts, web scraping, automação de planilhas (openpyxl, pandas)</li>
+        <li><strong>Ciência de Dados:</strong> pandas, numpy, matplotlib, jupyter</li>
+        <li><strong>DevOps:</strong> automação de infraestrutura, scripts de CI/CD</li>
+        <li><strong>Segurança:</strong> pentest, análise de malware, forense digital</li>
+      </ul>
+
+      <h3>O Que Aprender em Python em 2026 (Roadmap)</h3>
+      <ul>
+        <li>Fundamentos: variáveis, funções, listas, dicionários, loops</li>
+        <li>Orientação a Objetos: classes, herança, polimorfismo</li>
+        <li>Bibliotecas essenciais: requests, pandas, numpy</li>
+        <li>Frameworks web: FastAPI para APIs rápidas ou Django para sistemas completos</li>
+        <li>IA/ML: scikit-learn como porta de entrada, depois PyTorch</li>
+        <li>Agentes: LangChain ou CrewAI para automação com LLMs</li>
+      </ul>
+
+      <h3>Salários em Python (Brasil — 2026)</h3>
+      <ul>
+        <li><strong>Júnior:</strong> R$ 3.500 – R$ 6.000/mês</li>
+        <li><strong>Pleno:</strong> R$ 7.000 – R$ 12.000/mês</li>
+        <li><strong>Sênior:</strong> R$ 14.000 – R$ 25.000/mês</li>
+        <li><strong>ML Engineer / Data Scientist:</strong> R$ 15.000 – R$ 35.000/mês</li>
+      </ul>
+
+      <p><strong>Conclusão:</strong> Python não está "na moda" — está na base. Enquanto a IA dominar o mercado de tecnologia, Python será a linguagem mais estratégica que você pode aprender.</p>
+    `
+  },
+  // ── POST 5: TYPESCRIPT 5.5 ─────────────────────
+  {
+    titulo: "TypeScript 5.5 e as Novidades que Todo Dev Precisa Conhecer",
+    conteudo: "O TypeScript 5.5 chegou com inferência de tipo para closures, melhorias no isolatedDeclarations e suporte nativo a expressões regulares tipadas — tornando o código mais seguro e a experiência de dev ainda melhor.",
+    categoria: "JavaScript",
+    data: "12/05/2025",
+    imagem: "./Imagens/TypeScript.jpg",
+    conteudoCompleto: `
+      <p>O <strong>TypeScript 5.5</strong> foi lançado em maio de 2025 com melhorias significativas em inferência de tipos, performance e ergonomia de desenvolvedor. Se você trabalha com React, Next.js ou Node.js, as novidades vão simplificar seu fluxo de trabalho.</p>
+
+      <h3>Principais Novidades do TS 5.5</h3>
+      
+      <h3>1. Inferência de Tipo para Closures</h3>
+      <p>Antes:</p>
+      <ul>
+        <li>Closures exigiam anotações manuais para tipos de parâmetro</li>
+        <li>Erros de tipo só apareciam em tempo de compilação</li>
+      </ul>
+      <p>Agora:</p>
+      <pre><code>// TypeScript 5.5 infere automaticamente
+const createAdder = (x: number) => {
+  return (y) => x + y; // y é inferido como number
+};</code></pre>
+
+      <h3>2. Inferred Type Predicates</h3>
+      <p>Type predicates agora são inferidos automaticamente, reduzindo boilerplate:</p>
+      <pre><code>// Sem anotação explícita de retorno 'is'
+function isString(value: unknown) {
+  return typeof value === 'string';
+}
+// TypeScript entende que é um type predicate automaticamente</code></pre>
+
+      <h3>3. Isolated Declarations</h3>
+      <p>A flag <code>isolatedDeclarations: true</code> garante que cada arquivo possa ser analisado independentemente, acelerando compilação em projetos grandes.</p>
+
+      <h3>4. Regex Tipado Nativo</h3>
+      <pre><code>// Novo suporte a regex.test() com type guard
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const email = "user@example.com";
+
+if (emailRegex.test(email)) {
+  // email é inferido como validado aqui
+}</code></pre>
+
+      <h3>Por Que Isso Importa Para Seus Projetos</h3>
+      <ul>
+        <li><strong>React/Next.js:</strong> Melhor type safety em hooks customizados e context</li>
+        <li><strong>Node.js:</strong> Streams, eventos e callbacks com tipos mais precisos</li>
+        <li><strong>Performance:</strong> Compilação mais rápida em monorepos</li>
+        <li><strong>Ergonomia:</strong> Menos anotações manuais = código mais limpo</li>
+      </ul>
+
+      <h3>Como Atualizar</h3>
+      <pre><code>npm install -D typescript@latest
+// Ou com pnpm
+pnpm add -D typescript@latest</code></pre>
+
+      <p><strong>Aviso de compatibilidade:</strong> TypeScript 5.5 requer Node.js 16.3+ (ou 18+ recomendado).</p>
+
+      <p><strong>Resumo:</strong> TypeScript continua evoluindo para tornar o desenvolvimento seguro, rápido e agradável. Atualize assim que possível.</p>
+    `
+  },
 ];
 
 
