@@ -45,7 +45,7 @@ const posts = [
       <p>Ao escrever HTML bem estruturado e semântico, você garante que mecanismos de busca, leitores de tela e navegadores compreendam melhor seu conteúdo. Dominar o HTML é o primeiro passo para qualquer desenvolvedor web.</p>
     `
   },
-  // ── POST 1 ────────────────────────────
+  // ── POST 1: JavaScript: aprendendo a linguagem ────────────────────────────
   {
     titulo: "JavaScript: aprendendo a linguagem",
     conteudo: "Descubra as principais funcionalidades do JavaScript moderno — manipulação de DOM, async/await, Promises, módulos ES6 e muito mais.",
