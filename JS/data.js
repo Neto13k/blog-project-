@@ -832,7 +832,7 @@ customElements.define('my-card', MyCard);</code></pre>
       <p><strong>Conclusão:</strong> Web Components não vai substituir React, mas oferece uma alternativa leve, nativa e padronizada para construir componentes modernos. Vale a pena explorar para seu próximo projeto.</p>
     `
   },
-  // ── POST 15: PYTHON 2026 ──────────────────
+  // ── POST 16: PYTHON 2026 ──────────────────
   {
     titulo: "Python em 2026: Por Que Continua Sendo a Linguagem Número 1",
     conteudo: "Python domina rankings de linguagens pelo quinto ano consecutivo. Da IA ao desenvolvimento web, passando por automação e ciência de dados, veja por que aprender Python em 2026 ainda é a melhor decisão.",
