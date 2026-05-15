@@ -280,7 +280,7 @@ pnpm add -D typescript@latest</code></pre>
     conteudo: "Web Components — Custom Elements, Shadow DOM e HTML Templates — finalmente têm suporte total em todos os browsers modernos. Descubra como criar componentes reutilizáveis sem nenhum framework.",
     categoria: "HTML",
     data: "14/05/2025",
-    imagem: "https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/WebComponents.avif",
     conteudoCompleto: `
       <p>Por anos, Web Components foi a promessa não cumprida: criar componentes nativos em HTML sem depender de React, Vue ou Angular. Mas em 2025, <strong>finalmente chegamos ao ponto em que Web Components funciona, é confiável, e tem suporte total em todos os browsers modernos</strong>.</p>
 
