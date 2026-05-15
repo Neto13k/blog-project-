@@ -406,7 +406,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "GTA 6 chega em 19 de novembro de 2026 para PS5 e Xbox Series X|S. Dois protagonistas, Vice City renovada, gráficos com ray tracing global e a história de Lucia e Jason. Confira o guia completo.",
     categoria: "Games",
     data: "15/05/2026",
-    imagem: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/GTA6.jpg",
     conteudoCompleto: `
       <p>Depois de mais de uma década de espera, o <strong>Grand Theft Auto VI</strong> tem data confirmada: <strong>19 de novembro de 2026</strong>, para PlayStation 5 e Xbox Series X|S. O jogo mais aguardado da história dos videogames passou por dois adiamentos, mas a Rockstar Games garante que o resultado vai valer cada segundo de espera.</p>
 
@@ -449,7 +449,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "O mercado de inteligência artificial entrou em hipervelocidade. OpenAI, Google e Anthropic lançam modelos cada vez mais poderosos em 2026. Veja como essa corrida impacta desenvolvedores e empresas brasileiras.",
     categoria: "Tecnologia",
     data: "14/05/2026",
-    imagem: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&h=450&fit=crop&auto=format",
+    imagem: "./Imagens/IA 2026.avif",
     conteudoCompleto: `
       <p>2026 está provando ser o ano em que a inteligência artificial deixou de ser promessa e se tornou infraestrutura crítica. Com <strong>GPT-5</strong>, <strong>Gemini Ultra 2</strong> e <strong>Claude 4</strong> competindo diretamente, empresas e desenvolvedores estão diante de escolhas que vão definir o próximo ciclo tecnológico.</p>
 
