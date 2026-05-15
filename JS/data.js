@@ -664,7 +664,7 @@ pm2 monit</code></pre>
       <p><strong>Veredicto:</strong> Para quem joga regularmente e tem interesse em pelo menos 3–4 exclusivos Xbox por ano, o Game Pass Ultimate é <strong>altamente recomendado</strong>. Com a lineup de 2026, é o melhor momento da história para assinar.</p>
     `
   },
-  // ── POST 6: BITCOIN ─────────────────────
+  // ── POST 13: BITCOIN ─────────────────────
   {
     titulo: "Bitcoin a US$100 Mil: Entenda o que Aconteceu e o que Vem a Seguir",
     conteudo: "O Bitcoin ultrapassou a barreira dos US$100.000 no fim de 2024 e segue volátil em 2025. Entenda os fatores por trás da alta histórica, o papel dos ETFs spot, o halving e o que analistas projetam para o restante do ano.",
