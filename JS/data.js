@@ -78,7 +78,7 @@ const posts = [
       <p>JavaScript é uma linguagem versátil, poderosa e indispensável. Quem domina JS moderno tem acesso a praticamente todo o ecossistema de desenvolvimento web atual.</p>
     `
   },
-  // ── POST 2 ────────────────────────────
+  // ── POST 2: Consoles mais vendidos de todos os tempos ────────────────────────────
   {
     titulo: "Consoles mais vendidos de todos os tempos",
     conteudo: "Do PS2 ao Nintendo Switch — uma análise dos 5 consoles que bateram todos os recordes de vendas e marcaram gerações inteiras de jogadores.",
