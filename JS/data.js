@@ -954,7 +954,7 @@ pnpm add -D typescript@latest</code></pre>
     `
   },
 
-  // ── POST 20: ARTEMIS ─────────────────────
+  // ── POST 18: ARTEMIS ─────────────────────
   {
     titulo: "Missão Artemis: A Humanidade Voltando à Lua",
     conteudo: "A NASA lidera o programa Artemis com o objetivo de retornar humanos à Lua pela primeira vez desde 1972 — desta vez para ficar. Entenda as fases da missão, as tecnologias envolvidas e por que isso importa para o futuro da humanidade.",
