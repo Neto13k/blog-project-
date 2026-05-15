@@ -293,7 +293,7 @@ function Comments({ commentsPromise }) {
       <p><strong>Conclusão:</strong> React 19 não é uma reescrita — é uma evolução madura. As novas primitivas resolvem problemas reais de performance e DX que desenvolvedores enfrentavam há anos.</p>
     `
   },
-  // ── POST 8: FORZA HORIZON 6 ────
+  // ── POST 7 : FORZA HORIZON 6 ────
   {
     titulo: "Forza Horizon 6: Tudo Sobre o Jogo no Japão",
     conteudo: "O mais aguardado jogo de corrida do ano chegou! Forza Horizon 6 leva os jogadores ao Japão com 550+ carros, o maior mapa da franquia, Touge Battles e nota 91 no Metacritic. Disponível no Game Pass desde 19 de maio.",
