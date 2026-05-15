@@ -232,7 +232,7 @@ const posts = [
       <p><strong>Conclusão:</strong> A NVIDIA construiu o equivalente digital das refinarias de petróleo da era da IA. Enquanto o mundo precisar treinar e rodar modelos de inteligência artificial em escala, os chips verdes continuarão no centro de tudo.</p>
     `
   },
-  // ── POST 14: REACT 19 ─────────────────────
+  // ── POST 6: REACT 19 ─────────────────────
   {
     titulo: "React 19 e o Futuro do Desenvolvimento Frontend",
     conteudo: "React 19 trouxe Server Components estáveis, Actions, o novo hook use() e melhorias massivas de performance. Saiba o que mudou e como migrar seus projetos em 2026.",
