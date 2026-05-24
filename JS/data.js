@@ -670,7 +670,7 @@ pm2 monit</code></pre>
     conteudo: "O Bitcoin ultrapassou a barreira dos US$100.000 no fim de 2024 e segue volátil em 2025. Entenda os fatores por trás da alta histórica, o papel dos ETFs spot, o halving e o que analistas projetam para o restante do ano.",
     categoria: "Dinheiro",
     data: "13/05/2025",
-    imagem: "Imagens/Bitcoin.avif",
+    imagem: "Imagens/Bitcoin.jpg",
     conteudoCompleto: `
       <p>Em dezembro de 2024, o Bitcoin alcançou um marco histórico: <strong>ultrapassou US$100 mil</strong> pela primeira vez. Continuamos em 2025 e o ativo permanece volátil, oscilando entre US$90 e US$110 mil. <strong>Como chegamos aqui? E para onde vai?</strong></p>
 
