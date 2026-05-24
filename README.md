@@ -20,18 +20,12 @@ Blog estático sobre desenvolvimento web, games e tecnologia — design dark ter
 ## ✨ Funcionalidades
 
 ### Originais
-- ⭐ **Featured Post** — primeiro post em destaque no topo da página
+- ⭐ **Featured Post** — carrossel de posts em destaque no topo da página
 - 🗂️ **Filtro por categoria** — HTML, JavaScript, Games, Dinheiro e Tecnologia (5 categorias)
 - 👁️ **Contador de visualizações** — salvo por post via localStorage
 - 🔗 **Roteamento por URL** — `post.html?id=N` carrega o post correto
 - 📱 **Design responsivo** — suporte até 375px (celulares pequenos)
 - 🎞️ **Animações de entrada** — cards com delay escalonado
-
-### Novas (Atualização 2025)
-- 📊 **Barra de progresso de leitura** — preenche conforme o usuário rola o artigo
-- 💀 **Skeleton loading** — placeholder animado enquanto as imagens carregam
-- ✨ **Hover com glow colorido** — cada card brilha na cor de sua categoria
-- 🗃️ **Dados centralizados** — array unificado em `JS/data.js`, sem duplicação
 
 ---
 
@@ -43,11 +37,21 @@ Blog estático sobre desenvolvimento web, games e tecnologia — design dark ter
 | 1 | JavaScript: aprendendo a linguagem | JavaScript | 06/07/2025 |
 | 2 | Consoles mais vendidos de todos os tempos | Games | 07/07/2025 |
 | 3 | Dinheiro com tarefas fáceis | Dinheiro | 09/07/2025 |
-| 4 | DeepSeek e o Novo Cenário da IA em 2025 | Tecnologia | 10/05/2025 |
-| 5 | Nintendo Switch 2: O que Sabemos Até Agora | Games | 11/05/2025 |
-| 6 | TypeScript 5.5 e as Novidades que Todo Dev Precisa Conhecer | JavaScript | 12/05/2025 |
-| 7 | Bitcoin a US$100 Mil: Entenda o que Aconteceu e o que Vem a Seguir | Dinheiro | 13/05/2025 |
-| 8 | Web Components em 2025: HTML Nativo Finalmente Maduro | HTML | 14/05/2025 |
+| 4 | GTA 6: Tudo que Sabemos Sobre o Jogo Mais Aguardado da Década | Games | 15/05/2026 |
+| 5 | NVIDIA e a Corrida da IA: Como a Empresa Virou o Centro do Mundo Tech | Tecnologia | 18/05/2026 |
+| 6 | React 19 e o Futuro do Desenvolvimento Frontend | JavaScript | 12/05/2026 |
+| 7 | Forza Horizon 6: Tudo Sobre o Jogo no Japão | Games | 19/05/2026 |
+| 8 | IA em 2026: GPT-5, Gemini Ultra 2 e a Guerra dos Modelos | Tecnologia | 14/05/2026 |
+| 9 | Node.js em 2026: 10 Dicas para Escrever Código Profissional | JavaScript | 16/05/2026 |
+| 10 | DeepSeek e o Novo Cenário da IA em 2025 | Tecnologia | 10/05/2025 |
+| 11 | NVIDIA GeForce RTX 5000: A Nova Geração de GPUs Chegou | Tecnologia | 20/05/2026 |
+| 12 | Game Pass em 2026: O Que Mudou e Vale a Pena? | Games | 21/05/2026 |
+| 13 | Freelancer em 2026: Guia Completo para Começar Hoje | Dinheiro | 22/05/2026 |
+| 14 | TypeScript em 2026: Principais Novidades e Melhores Práticas | JavaScript | 13/05/2026 |
+| 15 | Bitcoin em 2026: De US$ 100 Mil a O Que Vem Depois | Dinheiro | 14/05/2026 |
+| 16 | Web Components em 2026: HTML Nativo Finalmente Maduro | HTML | 14/05/2026 |
+| 17 | Nintendo Switch 2 em 2026: O Que Sabemos Até Agora | Games | 11/05/2025 |
+| 18 | Artemis: O Retorno à Lua e o Caminho Para Marte | Tecnologia | 23/05/2026 |
 
 ---
 
@@ -58,7 +62,7 @@ Blog estático sobre desenvolvimento web, games e tecnologia — design dark ter
 | HTML5 | Estrutura semântica das páginas |
 | CSS3 | Design system com variáveis customizadas e animações |
 | JavaScript ES6+ | Renderização dinâmica, filtros, roteamento e scroll events |
-| Google Fonts | Tipografia — Syne, Space Mono, Inter |
+| Google Fonts | Tipografia — Syne, JetBrains Mono |
 | localStorage | Persistência do contador de visualizações |
 | GitHub Pages | Hospedagem e deploy contínuo via GitHub Actions |
 
@@ -102,15 +106,16 @@ blog-project/
 ├── Imagens/                    # Assets de imagem dos posts
 │
 ├── css/
-│   └── blog.css                # Estilos globais + design system + skeleton + glow
+│   └── blog.css                # Estilos antigos (deprecated)
 │
 ├── JS/
-│   ├── data.js                 # Array unificado com todos os posts
+│   ├── data.js                 # Array unificado com todos os posts + funções utilitárias
 │   ├── Blog.js                 # Listagem, filtros e featured post
-│   └── post.js                 # Renderização do post individual + barra de progresso
+│   └── post.js                 # Renderização do post individual
 │
 ├── index.html                  # Página principal
 ├── post.html                   # Página de post (dinâmica via URL param)
+├── style.css                   # Arquivo de estilos principal
 └── README.md
 ```
 
