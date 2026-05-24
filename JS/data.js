@@ -148,7 +148,7 @@ const posts = [
     conteudo: "GTA 6 chega em 19 de novembro de 2026 para PS5 e Xbox Series X|S. Dois protagonistas, Vice City renovada, gráficos com ray tracing global e a história de Lucia e Jason. Confira o guia completo.",
     categoria: "Games",
     data: "15/05/2026",
-    imagem: "./Imagens/GTA6.jpg",
+    imagem: "Imagens/GTA6.jpg",
     conteudoCompleto: `
       <p>Depois de mais de uma década de espera, o <strong>Grand Theft Auto VI</strong> tem data confirmada: <strong>19 de novembro de 2026</strong>, para PlayStation 5 e Xbox Series X|S. O jogo mais aguardado da história dos videogames passou por dois adiamentos, mas a Rockstar Games garante que o resultado vai valer cada segundo de espera.</p>
 
@@ -191,7 +191,7 @@ const posts = [
     conteudo: "A NVIDIA deixou de ser apenas uma fabricante de GPUs para se tornar a empresa mais valiosa do mundo em 2024–2026. Entenda como os chips H100 e Blackwell alimentam a revolução da IA e o que isso significa para o futuro.",
     categoria: "Tecnologia",
     data: "18/05/2026",
-    imagem: "./Imagens/NvidiaLogo.avif",
+    imagem: "Imagens/NvidiaLogo.avif",
     conteudoCompleto: `
       <p>Em 2024, a <strong>NVIDIA</strong> ultrapassou Apple e Microsoft para se tornar a empresa mais valiosa do mundo, com capitalização de mercado acima de US$ 3 trilhões. A razão: seus chips de GPU se tornaram a infraestrutura fundamental sobre a qual toda a revolução da inteligência artificial é construída.</p>
 
@@ -238,7 +238,7 @@ const posts = [
     conteudo: "React 19 trouxe Server Components estáveis, Actions, o novo hook use() e melhorias massivas de performance. Saiba o que mudou e como migrar seus projetos em 2026.",
     categoria: "JavaScript",
     data: "12/05/2026",
-    imagem: "./Imagens/React 19.jpg",
+    imagem: "Imagens/React 19.jpg",
     conteudoCompleto: `
       <p>O <strong>React 19</strong>, lançado no final de 2024 e amplamente adotado em 2025–2026, representa a maior mudança na forma de escrever aplicações React desde os hooks em 2019. As novidades não são apenas sintáticas — elas mudam fundamentalmente como você pensa sobre renderização, estado e dados.</p>
 
@@ -299,7 +299,7 @@ function Comments({ commentsPromise }) {
     conteudo: "O mais aguardado jogo de corrida do ano chegou! Forza Horizon 6 leva os jogadores ao Japão com 550+ carros, o maior mapa da franquia, Touge Battles e nota 91 no Metacritic. Disponível no Game Pass desde 19 de maio.",
     categoria: "Games",
     data: "19/05/2026",
-    imagem: "./Imagens/Forza6.jpg",
+    imagem: "Imagens/Forza6.jpg",
     conteudoCompleto: `
       <p><strong>Forza Horizon 6</strong> finalmente chegou e superou as expectativas. Lançado em 19 de maio de 2026 para Xbox Series X|S, PC e disponível desde o primeiro dia no <strong>Xbox Game Pass</strong>, o jogo recebeu nota <strong>91 no Metacritic</strong>, consagrando-se como o melhor título da franquia até hoje.</p>
 
@@ -351,7 +351,7 @@ function Comments({ commentsPromise }) {
     conteudo: "O mercado de inteligência artificial entrou em hipervelocidade. OpenAI, Google e Anthropic lançam modelos cada vez mais poderosos em 2026. Veja como essa corrida impacta desenvolvedores e empresas brasileiras.",
     categoria: "Tecnologia",
     data: "14/05/2026",
-    imagem: "./Imagens/IA 2026.avif",
+    imagem: "Imagens/IA 2026.avif",
     conteudoCompleto: `
       <p>2026 está provando ser o ano em que a inteligência artificial deixou de ser promessa e se tornou infraestrutura crítica. Com <strong>GPT-5</strong>, <strong>Gemini Ultra 2</strong> e <strong>Claude 4</strong> competindo diretamente, empresas e desenvolvedores estão diante de escolhas que vão definir o próximo ciclo tecnológico.</p>
 
@@ -390,7 +390,7 @@ function Comments({ commentsPromise }) {
     conteudo: "Node.js continua sendo a espinha dorsal do backend JavaScript moderno. Confira 10 dicas práticas — de gerenciamento de erros a performance e segurança — para elevar seu nível como desenvolvedor Node.",
     categoria: "JavaScript",
     data: "16/05/2026",
-    imagem: "./Imagens/Nodejs.jpg",
+    imagem: "Imagens/Nodejs.jpg",
     conteudoCompleto: `
       <p><strong>Node.js</strong> completou mais de 15 anos em produção e segue como a escolha dominante para APIs, servidores em tempo real e microsserviços em JavaScript. Mas com tanta liberdade, é fácil cair em armadilhas. Estas 10 dicas separam o código júnior do código profissional.</p>
 
@@ -546,7 +546,7 @@ pm2 monit</code></pre>
     conteudo: "A startup chinesa DeepSeek lançou modelos de IA que rivalizam com GPT-4 a uma fração do custo, remodelando o mercado global de inteligência artificial e acendendo debates sobre soberania tecnológica.",
     categoria: "Tecnologia",
     data: "10/05/2025",
-    imagem: "./Imagens/DeepSeek.avif",
+    imagem: "Imagens/DeepSeek.avif",
     conteudoCompleto: `
       <p>Em janeiro de 2025, a startup chinesa <strong>DeepSeek</strong> chocou o mundo da tecnologia ao lançar seu modelo de IA <strong>R1</strong>, capaz de rivalizar com o GPT-4 da OpenAI em várias tarefas, mas com um diferencial revolucionário: o custo de inferência é apenas uma fração do que os modelos americanos cobram.</p>
 
@@ -575,7 +575,7 @@ pm2 monit</code></pre>
     conteudo: "A NVIDIA apresentou a série RTX 5000 com arquitetura Blackwell, DLSS 4 e desempenho até 2x maior que a geração anterior. Veja o que mudou e qual placa vale o investimento em 2026.",
     categoria: "Tecnologia",
     data: "20/05/2026",
-    imagem: "./Imagens/RTX.avif",
+    imagem: "Imagens/RTX.avif",
     conteudoCompleto: `
       <p>A <strong>NVIDIA GeForce RTX 5000</strong>, baseada na arquitetura <strong>Blackwell</strong>, representa o maior salto geracional da empresa desde a chegada do ray tracing com a RTX 2000. Com DLSS 4, novos Tensor Cores de 5ª geração e memória GDDR7, a linha redefine o que é possível em jogos, IA e criação de conteúdo.</p>
 
@@ -621,7 +621,7 @@ pm2 monit</code></pre>
     conteudo: "Com Forza Horizon 6, Gears of War E-Day, Halo: Campaign Evolved e Fable chegando ao Game Pass em 2026, a assinatura da Microsoft nunca foi tão recheada. Analisamos se vale o investimento para jogadores brasileiros.",
     categoria: "Games",
     data: "13/05/2026",
-    imagem: "./Imagens/GamePass.jpg",
+    imagem: "Imagens/GamePass.jpg",
     conteudoCompleto: `
       <p>2026 está sendo o ano mais forte da história do <strong>Xbox Game Pass</strong>. Com uma fila impressionante de exclusivos chegando ao catálogo já no dia de lançamento, a Microsoft finalmente entrega a promessa que fez há anos: transformar o Game Pass na "Netflix dos jogos".</p>
 
@@ -670,7 +670,7 @@ pm2 monit</code></pre>
     conteudo: "O Bitcoin ultrapassou a barreira dos US$100.000 no fim de 2024 e segue volátil em 2025. Entenda os fatores por trás da alta histórica, o papel dos ETFs spot, o halving e o que analistas projetam para o restante do ano.",
     categoria: "Dinheiro",
     data: "13/05/2025",
-    imagem: "./Imagens/Bitcoin.avif",
+    imagem: "Imagens/Bitcoin.avif",
     conteudoCompleto: `
       <p>Em dezembro de 2024, o Bitcoin alcançou um marco histórico: <strong>ultrapassou US$100 mil</strong> pela primeira vez. Continuamos em 2025 e o ativo permanece volátil, oscilando entre US$90 e US$110 mil. <strong>Como chegamos aqui? E para onde vai?</strong></p>
 
@@ -711,7 +711,7 @@ pm2 monit</code></pre>
     conteudo: "O mercado de freelancers de tecnologia nunca esteve tão aquecido. Veja como precificar seus serviços de desenvolvimento e IA, quais plataformas usar e como sair da concorrência por preço.",
     categoria: "Dinheiro",
     data: "14/05/2026",
-    imagem: "./Imagens/Freelancer.jpg",
+    imagem: "Imagens/Freelancer.jpg",
     conteudoCompleto: `
       <p>O mercado de <strong>freelancers de tecnologia</strong> cresceu 67% no Brasil entre 2023 e 2026, impulsionado pela demanda por IA, automações e desenvolvimento web. Mas com mais profissionais entrando na área, saber <strong>precificar e se posicionar</strong> virou questão de sobrevivência.</p>
 
@@ -764,7 +764,7 @@ pm2 monit</code></pre>
     conteudo: "Web Components — Custom Elements, Shadow DOM e HTML Templates — finalmente têm suporte total em todos os browsers modernos. Descubra como criar componentes reutilizáveis sem nenhum framework.",
     categoria: "HTML",
     data: "14/05/2025",
-    imagem: "./Imagens/WebComponents.avif",
+    imagem: "Imagens/WebComponents.avif",
     conteudoCompleto: `
       <p>Por anos, Web Components foi a promessa não cumprida: criar componentes nativos em HTML sem depender de React, Vue ou Angular. Mas em 2025, <strong>finalmente chegamos ao ponto em que Web Components funciona, é confiável, e tem suporte total em todos os browsers modernos</strong>.</p>
 
@@ -838,7 +838,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "Python domina rankings de linguagens pelo quinto ano consecutivo. Da IA ao desenvolvimento web, passando por automação e ciência de dados, veja por que aprender Python em 2026 ainda é a melhor decisão.",
     categoria: "Tecnologia",
     data: "10/05/2026",
-    imagem: "./Imagens/Python.jpg",
+    imagem: "Imagens/Python.jpg",
     conteudoCompleto: `
       <p><strong>Python</strong> ocupa o topo do índice TIOBE pelo quinto ano consecutivo e continua sendo a linguagem mais ensinada em universidades, bootcamps e cursos online. Em 2026, com a explosão da IA, o Python se tornou ainda mais indispensável. Mas por quê, e o que aprender nele?</p>
 
@@ -897,7 +897,7 @@ customElements.define('my-card', MyCard);</code></pre>
     conteudo: "O TypeScript 5.5 chegou com inferência de tipo para closures, melhorias no isolatedDeclarations e suporte nativo a expressões regulares tipadas — tornando o código mais seguro e a experiência de dev ainda melhor.",
     categoria: "JavaScript",
     data: "12/05/2025",
-    imagem: "./Imagens/TypeScript.jpg",
+    imagem: "Imagens/TypeScript.jpg",
     conteudoCompleto: `
       <p>O <strong>TypeScript 5.5</strong> foi lançado em maio de 2025 com melhorias significativas em inferência de tipos, performance e ergonomia de desenvolvedor. Se você trabalha com React, Next.js ou Node.js, as novidades vão simplificar seu fluxo de trabalho.</p>
 
@@ -960,7 +960,7 @@ pnpm add -D typescript@latest</code></pre>
     conteudo: "A NASA lidera o programa Artemis com o objetivo de retornar humanos à Lua pela primeira vez desde 1972 — desta vez para ficar. Entenda as fases da missão, as tecnologias envolvidas e por que isso importa para o futuro da humanidade.",
     categoria: "Tecnologia",
     data: "15/05/2026",
-    imagem: "./Imagens/Artemis.jpg",
+    imagem: "Imagens/Artemis.jpg",
     conteudoCompleto: `
       <p>Mais de 50 anos após a última pegada humana na Lua, a <strong>NASA</strong> lidera o programa <strong>Artemis</strong> — a missão mais ambiciosa da exploração espacial moderna. Desta vez, o objetivo não é apenas visitar: é estabelecer uma presença humana sustentável na Lua e usar isso como trampolim para Marte.</p>
 
