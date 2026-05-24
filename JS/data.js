@@ -546,7 +546,7 @@ pm2 monit</code></pre>
     conteudo: "A startup chinesa DeepSeek lançou modelos de IA que rivalizam com GPT-4 a uma fração do custo, remodelando o mercado global de inteligência artificial e acendendo debates sobre soberania tecnológica.",
     categoria: "Tecnologia",
     data: "10/05/2025",
-    imagem: "Imagens/DeepSeek.avif",
+    imagem: "Imagens/DeepSeek.jpg",
     conteudoCompleto: `
       <p>Em janeiro de 2025, a startup chinesa <strong>DeepSeek</strong> chocou o mundo da tecnologia ao lançar seu modelo de IA <strong>R1</strong>, capaz de rivalizar com o GPT-4 da OpenAI em várias tarefas, mas com um diferencial revolucionário: o custo de inferência é apenas uma fração do que os modelos americanos cobram.</p>
 
